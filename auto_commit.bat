@@ -2,9 +2,9 @@
 setlocal enabledelayedexpansion
 
 :: 设置GitHub仓库的URL
-set "REPO_URL=https://github.com/yourusername/yourrepository.git"
+set "REPO_URL=https://github.com/Horc-zh/open-software-foundation-homework.git"
 :: 设置本地仓库路径
-set "REPO_PATH=C:\path\to\your\repo"
+set "REPO_PATH=D:\Code\VSCode\other\opensoftware-foundation"
 
 :: 进入仓库目录
 cd /d %REPO_PATH%
