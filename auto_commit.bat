@@ -1,40 +1,33 @@
 @echo off
 setlocal enabledelayedexpansion
 
-:: 设置GitHub仓库的URL
-set "REPO_URL=https://github.com/Horc-zh/open-software-foundation-homework.git"
-:: 设置本地仓库路径
-set "REPO_PATH=D:\Code\VSCode\other\opensoftware-foundation"
+:: 设置仓库路径
+set REPO_PATH="D:\Code\VSCode\other\opensoftware-foundation\auto_commit.bat"
+set FILE_PATH="%REPO_PATH%\file.txt"
 
 :: 进入仓库目录
 cd /d %REPO_PATH%
 
-:: 循环开始
+:: 无限循环
 :loop
-:: 生成随机时间（单位：秒），范围1到60秒
-set /a "randtime=!random! %% 60 + 1"
-echo Waiting for !randtime! seconds...
-timeout /t !randtime!
+    :: 生成随机的时间间隔（比如在5到10分钟之间）
+    set /a "randomWaitTime=(5+random*5)"
 
-:: 生成新文件名
-set "newfile=commit_!random!.txt"
+    :: 等待随机时间
+    echo Waiting for %randomWaitTime% seconds...
+    timeout /t %randomWaitTime% >nul
 
-:: 创建新文件并写入内容
-echo This is commit number: !random! > !newfile!
+    :: 生成新的文件内容
+    echo %random% >> %FILE_PATH%
 
-:: 添加文件到git
-git add !newfile!
+    :: 添加更改到 Git
+    git add %FILE_PATH%
 
-:: 提交更改
-git commit -m "Automated commit with new file !newfile!"
+    :: 提交更改
+    git commit -m "Auto commit at %date% %time%"
 
-:: 推送到GitHub
-git push origin main
+    :: 推送到 GitHub
+    git push origin main
 
-:: 循环回到开始
-goto loop
-
-:: 随机数生成器
-:random
-set /a "i=!random! * !random!"
-goto :eof
+    :: 返回循环
+    goto loop
