@@ -33,6 +33,7 @@ def analyze_commit_frequency(df):
     按日期统计提交数量，并绘制折线图
     """
     print("\n分析提交频率（按日期）...")
+
     # 将日期转换为标准 datetime 格式
     df['date'] = pd.to_datetime(df['date'], errors='coerce')
     daily_commits = df['date'].dt.date.value_counts().sort_index()
@@ -61,14 +62,82 @@ def analyze_version_releases(df):
     print(version_commits[['date', 'message']])
     return version_commits
 
-def save_results(commit_counts, version_commits):
+import re
+
+def classify_commit_type(message):
+    """
+    细化提交类型的分类规则
+    :param message: 提交信息
+    :return: 提交类型
+    """
+    message = str(message).lower()  # 确保消息是小写的
+
+    # 版本发布检测
+    if re.search(r'v\d+\.\d+\.\d+', message):  # 匹配版本号（如 v3.19.3）
+        return 'Version Release'
+
+    # 功能增加或改进
+    elif 'feature' in message or 'add' in message or 'new' in message or 'implement' in message:
+        return 'Feature'  # 功能/新特性
+
+    # Bug 修复
+    elif 'fix' in message or 'bug' in message or 'patch' in message or 'error' in message:
+        return 'Bug Fix'  # Bug 修复
+
+    # 性能优化或重构
+    elif 'performance' in message or 'optimize' in message or 'refactor' in message:
+        return 'Performance/Refactor'  # 性能优化或重构
+
+    # 文档更新
+    elif 'doc' in message or 'documentation' in message or 'readme' in message or 'update docs' in message:
+        return 'Documentation'  # 文档更新
+
+    # 其他类型（无法明确分类的）
+    else:
+        return 'Other'
+
+def analyze_commit_types(df):
+    """
+    分析提交类型（如版本发布、功能增加、bug修复、性能优化、文档更新等）
+    :param df: 提交历史数据的 DataFrame
+    :return: 提交类型的统计信息
+    """
+    print("\n分析提交类型...")
+
+    # 将每条提交的消息按规则分类
+    df['type'] = df['message'].apply(classify_commit_type)
+
+    # 统计每种类型的提交次数
+    commit_types = df['type'].value_counts()
+
+    print("提交类型分布：")
+    print(commit_types)
+
+    # 绘制提交类型的分布柱状图
+    plt.figure(figsize=(10, 6))
+    commit_types.plot(kind='bar', color='skyblue')
+    plt.title("Commit Types Distribution")
+    plt.xlabel("Commit Type")
+    plt.ylabel("Number of Commits")
+    plt.xticks(rotation=45, ha="right")
+    plt.tight_layout()
+    plt.savefig("commit_types.png")  # 保存图像
+    plt.show()
+
+    # 返回提交类型统计信息
+    return commit_types
+
+
+
+def save_results(commit_counts, version_commits, commit_types):
     """
     保存统计结果到文件
     """
     print("\n保存分析结果到文件...")
     commit_counts.to_csv("commit_counts_by_author.csv", header=True)
     version_commits.to_csv("version_releases.csv", index=False)
-    print("结果已保存到 'commit_counts_by_author.csv' 和 'version_releases.csv'")
+    commit_types.to_csv("commit_types.csv", header=True)
+    print("结果已保存到 'commit_counts_by_author.csv', 'version_releases.csv', 'commit_types.csv'")
 
 def main():
     # 定义文件路径
@@ -89,8 +158,11 @@ def main():
     # 版本发布统计
     version_commits = analyze_version_releases(df)
     
+    # 提交类型分析
+    commit_types = analyze_commit_types(df)
+    
     # 保存结果
-    save_results(commit_counts, version_commits)
+    save_results(commit_counts, version_commits, commit_types)
 
 if __name__ == "__main__":
     main()
