@@ -64,6 +64,8 @@ def analyze_version_releases(df):
 
 import re
 
+import re
+
 def classify_commit_type(message):
     """
     细化提交类型的分类规则
@@ -77,20 +79,32 @@ def classify_commit_type(message):
         return 'Version Release'
 
     # 功能增加或改进
-    elif 'feature' in message or 'add' in message or 'new' in message or 'implement' in message:
+    elif 'feature' in message or 'add' in message or 'new' in message or 'implement' in message or 'enhance' in message:
         return 'Feature'  # 功能/新特性
 
     # Bug 修复
-    elif 'fix' in message or 'bug' in message or 'patch' in message or 'error' in message:
+    elif 'fix' in message or 'bug' in message or 'patch' in message or 'error' in message or 'hotfix' in message:
         return 'Bug Fix'  # Bug 修复
 
     # 性能优化或重构
-    elif 'performance' in message or 'optimize' in message or 'refactor' in message:
+    elif 'performance' in message or 'optimize' in message or 'refactor' in message or 'improve' in message:
         return 'Performance/Refactor'  # 性能优化或重构
 
     # 文档更新
-    elif 'doc' in message or 'documentation' in message or 'readme' in message or 'update docs' in message:
+    elif 'doc' in message or 'documentation' in message or 'readme' in message or 'update docs' in message or 'docs' in message:
         return 'Documentation'  # 文档更新
+
+    # 测试
+    elif 'test' in message or 'tests' in message or 'unittest' in message or 'integration' in message:
+        return 'Test'  # 测试
+
+    # 配置或环境更新
+    elif 'config' in message or 'environment' in message or 'docker' in message or 'ci' in message or 'ci/cd' in message:
+        return 'Configuration/Environment'  # 配置/环境
+
+    # 安全更新
+    elif 'security' in message or 'vulnerability' in message or 'exploit' in message or 'fix security' in message:
+        return 'Security'  # 安全更新
 
     # 其他类型（无法明确分类的）
     else:
