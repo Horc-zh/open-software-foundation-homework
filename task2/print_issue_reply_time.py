@@ -1,12 +1,11 @@
-import os
 from time import sleep
 
 import github
 
-token = os.getenv("GITHUB_TOKEN")
+# token = os.getenv("GITHUB_TOKEN")
 repo_url = "simplejson/simplejson"
 
-gh = github.Github(token)
+gh = github.Github()
 repo = gh.get_repo("simplejson/simplejson")
 
 
