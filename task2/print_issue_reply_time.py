@@ -1,13 +1,12 @@
+import os
 from time import sleep
 
 import github
-from github import Auth
 
-token = "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"
+token = os.getenv("GITHUB_TOKEN")
 repo_url = "simplejson/simplejson"
 
-auth = Auth.Token(token)
-gh = github.Github(auth=auth)
+gh = github.Github(token)
 repo = gh.get_repo("simplejson/simplejson")
 
 
