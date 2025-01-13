@@ -20,6 +20,9 @@ def fetch_releases(owner, repo):
         return []
 
 def analyze_release_content(releases):
+    """
+    分析 Releases 的内容，统计行为类型
+    """
     data = []
     for release in releases:
         release_name = release.get("name", "Unknown")
@@ -46,59 +49,56 @@ def analyze_release_content(releases):
         })
     return pd.DataFrame(data)
 
-
 def plot_release_frequency(df):
     """
-    绘制发布频率折线图
+    按年份统计发布频率并绘制折线图
     """
     df['published_at'] = pd.to_datetime(df['published_at'])
-    release_counts = df['published_at'].dt.date.value_counts().sort_index()
+    release_counts = df['published_at'].dt.year.value_counts().sort_index()
 
     plt.figure(figsize=(12, 6))
     release_counts.plot(kind='line', marker='o')
-    plt.title("Release Frequency Over Time")
-    plt.xlabel("Date")
+    plt.title("Release Frequency by Year")
+    plt.xlabel("Year")
     plt.ylabel("Number of Releases")
-    plt.xticks(rotation=45)
+    plt.grid(True, linestyle='--', alpha=0.7)
     plt.tight_layout()
-    plt.savefig("release_frequency.png")
-    plt.show()
-
-def plot_behavior_distribution(df):
-    """
-    绘制各类行为分布柱状图
-    """
-    behavior_summary = df[['features', 'bug_fixes', 'doc_updates', 'performance', 'other']].sum()
-
-    plt.figure(figsize=(10, 6))
-    behavior_summary.plot(kind='bar', color='skyblue')
-    plt.title("Distribution of Release Behaviors")
-    plt.xlabel("Behavior Type")
-    plt.ylabel("Total Count")
-    plt.xticks(rotation=45)
-    plt.tight_layout()
-    plt.savefig("behavior_distribution.png")
+    plt.savefig("release_frequency_by_year.png")
     plt.show()
 
 def plot_behavior_trend(df):
     """
-    绘制各类行为的时间趋势图
+    按季度统计行为趋势并绘制折线图
     """
     df['published_at'] = pd.to_datetime(df['published_at'])
     df = df.sort_values('published_at')
 
-    behavior_trends = df.set_index('published_at')[['features', 'bug_fixes', 'doc_updates', 'performance', 'other']].resample('M').sum()
+    # 按季度汇总行为数据
+    behavior_trends = df.set_index('published_at')[['features', 'bug_fixes', 'doc_updates', 'performance', 'other']].resample('Q').sum()
+    release_counts = df.set_index('published_at').resample('Q').size()
 
     plt.figure(figsize=(12, 6))
     for column in behavior_trends.columns:
         plt.plot(behavior_trends.index, behavior_trends[column], label=column.capitalize())
 
-    plt.title("Behavior Trends Over Time")
-    plt.xlabel("Date")
+    plt.title("Behavior Trends by Quarter")
+    plt.xlabel("Quarter")
     plt.ylabel("Count")
     plt.legend()
+    plt.grid(True, linestyle='--', alpha=0.7)
     plt.tight_layout()
-    plt.savefig("behavior_trends.png")
+    plt.savefig("behavior_trends_by_quarter.png")
+    plt.show()
+
+    # 绘制每季度发布次数的折线图
+    plt.figure(figsize=(12, 6))
+    release_counts.plot(kind='line', marker='o', color='purple')
+    plt.title("Release Frequency by Quarter")
+    plt.xlabel("Quarter")
+    plt.ylabel("Number of Releases")
+    plt.grid(True, linestyle='--', alpha=0.7)
+    plt.tight_layout()
+    plt.savefig("release_frequency_by_quarter.png")
     plt.show()
 
 def save_analysis_results(df):
@@ -124,7 +124,6 @@ def main():
 
     # 绘制图表
     plot_release_frequency(df)
-    plot_behavior_distribution(df)
     plot_behavior_trend(df)
 
     # 保存结果
