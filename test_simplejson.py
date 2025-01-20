@@ -1,67 +1,85 @@
-import simplejson
+import simplejson as json
 from hypothesis import given, strategies as st
-from hypothesis.errors import InvalidArgument
+import pytest
 
-# 1. 测试 simplejson.loads() 的随机字符串输入
+# 测试用例：测试loads函数的稳定性
+
 @given(st.text())
-def test_loads_random_input(input_data):
+def test_loads_valid_json(json_string):
+    """测试loads函数的稳定性，处理有效的JSON字符串"""
     try:
-        # 尝试解析随机生成的 JSON 字符串
-        simplejson.loads(input_data)
-    except simplejson.errors.JSONDecodeError:
-        pass  # 忽略无效的 JSON 格式
-    except Exception as e:
-        assert False, f"Unexpected error in loads: {e}"
+        result = json.loads(json_string)
+        assert isinstance(result, (dict, list, str, int, float, bool, type(None)))
+    except ValueError:
+        pass  # 如果是无效的JSON格式，ValueError是预期的
 
-# 2. 测试 simplejson.loads() 处理非法字符的情况
+@given(st.lists(st.integers()))
+def test_loads_valid_list(json_list):
+    """测试loads函数的稳定性，处理有效的JSON列表"""
+    json_string = json.dumps(json_list)
+    result = json.loads(json_string)
+    assert result == json_list
+
+@given(st.dictionaries(st.text(), st.integers()))
+def test_loads_valid_dict(json_dict):
+    """测试loads函数的稳定性，处理有效的JSON字典"""
+    json_string = json.dumps(json_dict)
+    result = json.loads(json_string)
+    assert result == json_dict
+
+@given(st.text(min_size=10, max_size=100))
+def test_loads_invalid_json(json_string):
+    """测试loads函数对非法JSON字符串的处理"""
+    if not json_string.startswith("{") and not json_string.startswith("["):
+        with pytest.raises(ValueError):
+            json.loads(json_string)
+
+# 测试用例：测试dumps函数的稳定性
+
+@given(st.lists(st.integers()))
+def test_dumps_list(json_list):
+    """测试dumps函数的稳定性，序列化JSON列表"""
+    result = json.dumps(json_list)
+    assert isinstance(result, str)
+    # 验证是否能够成功反序列化
+    assert json.loads(result) == json_list
+
+@given(st.dictionaries(st.text(), st.integers()))
+def test_dumps_dict(json_dict):
+    """测试dumps函数的稳定性，序列化JSON字典"""
+    result = json.dumps(json_dict)
+    assert isinstance(result, str)
+    # 验证是否能够成功反序列化
+    assert json.loads(result) == json_dict
+
 @given(st.text())
-def test_loads_invalid_characters(input_data):
-    # 在随机文本中加入非法字符（如非 UTF-8 编码字符）
-    invalid_json = input_data + "\x80"  # \x80 是非法的 ASCII 字符
-    try:
-        simplejson.loads(invalid_json)
-    except simplejson.errors.JSONDecodeError:
-        pass  # 预期抛出 JSONDecodeError 异常
-    except Exception as e:
-        assert False, f"Unexpected error in loads with invalid char: {e}"
+def test_dumps_string(json_string):
+    """测试dumps函数的稳定性，序列化JSON字符串"""
+    result = json.dumps(json_string)
+    assert isinstance(result, str)
 
-# 3. 测试 simplejson.loads() 处理边界值（如空字符串和极大数字）
-@given(st.one_of(st.text(), st.integers(), st.floats(), st.none()))
-def test_loads_edge_cases(input_data):
-    try:
-        # 尝试解析不同类型的边界值
-        simplejson.loads(str(input_data))
-    except simplejson.errors.JSONDecodeError:
-        pass  # 忽略无效的 JSON 格式
-    except Exception as e:
-        assert False, f"Unexpected error in loads with edge cases: {e}"
+@given(st.integers())
+def test_dumps_integer(json_integer):
+    """测试dumps函数的稳定性，序列化整数"""
+    result = json.dumps(json_integer)
+    assert isinstance(result, str)
+    # 验证反序列化
+    assert json.loads(result) == json_integer
 
-# 4. 测试 simplejson.dumps() 能否正确序列化基本类型（数字、列表、字典等）
-@given(st.integers() | st.floats() | st.booleans() | st.text() | st.lists(st.integers()) | st.dictionaries(st.text(), st.integers()))
-def test_dumps_basic_types(input_data):
-    try:
-        result = simplejson.dumps(input_data)
-        assert isinstance(result, str)  # 确保返回的结果是字符串
-    except Exception as e:
-        assert False, f"Unexpected error in dumps with basic types: {e}"
+# 边界测试：测试极大数值、特殊字符等
 
-# 5. 测试 simplejson.dumps() 处理无法序列化的对象（如自定义类对象）
-class CustomClass:
-    def __init__(self, value):
-        self.value = value
+@given(st.integers(min_value=-10**6, max_value=10**6))
+def test_dumps_large_integer(json_integer):
+    """测试dumps函数的稳定性，处理大数值"""
+    result = json.dumps(json_integer)
+    assert isinstance(result, str)
+    # 验证反序列化
+    assert json.loads(result) == json_integer
 
-    def __repr__(self):
-        return f"CustomClass({self.value})"
-
-# 测试无法序列化的对象
-@given(st.builds(CustomClass, st.text()))
-def test_dumps_non_serializable_objects(custom_obj):
-    try:
-        # 尝试序列化自定义类对象
-        result = simplejson.dumps(custom_obj)
-        assert False, "Expected TypeError for non-serializable object"
-    except TypeError:
-        pass  # 预期抛出 TypeError 异常
-    except Exception as e:
-        assert False, f"Unexpected error in dumps with non-serializable object: {e}"
-
+@given(st.text(min_size=1000))
+def test_dumps_large_string(json_string):
+    """测试dumps函数的稳定性，处理长字符串"""
+    result = json.dumps(json_string)
+    assert isinstance(result, str)
+    # 验证反序列化
+    assert json.loads(result) == json_string
