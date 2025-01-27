@@ -1,0 +1,658 @@
+6932004966ab70ef47250a2b3152acd8c904e6b5,Bob Ippolito,2024-08-14,v3.19.3
+c96227a3aeeac1fdecc37e5390785f1370944d76,Bob Ippolito,2024-08-13,Merge pull request #326 from edgarrmondragon/cp313
+6900b4bc61e16f149b601cde36db5e2c592765c2,Edgar Ramírez-Mondragón,2024-08-13,Build 2.7 wheels only for Linux
+0e1c842839d627be0e7b4dc4a0d5edb8448d7c1a,Edgar Ramírez-Mondragón,2024-08-12,Updated test & build matrix to include Python 3.13
+2d759f427a1196ae209d251d6724c15e5bdad1bb,Bob Ippolito,2023-12-03,Merge pull request #319 from SmartHypercube-fork/master
+728c01040bc60351e65ff7ad55ed40e86f7ab5ea,Hypercube,2023-12-03,Remove the note mentioning YAML
+532f41f870f6287ffe73882a313c2cc9c70f3cb6,Bob Ippolito,2023-10-05,Merge pull request #317 from simplejson/update-cibw
+3fefaa61ba40053f17a69fee98e73746a081d798,Bob Ippolito,2023-10-05,Update build & test matrix and use GitHub Actions as a Trusted Publisher
+aeb63ee451732b1e77008c28153380d8dd0fda20,Bob Ippolito,2023-04-06,v3.19.1
+1a4995dca71e02957d81becd7a053c9b4f19aceb,Bob Ippolito,2023-04-06,Merge pull request #313 from simplejson/audit-fixes
+ec4a3d5c7299b16a9bf4d431fa16f466cc453697,Bob Ippolito,2023-04-06,Update CHANGES.txt
+2cbc419a31208dd9d0ed5706d5f3aa333ebd3e30,Bob Ippolito,2023-04-05,Additional security hardening improvements:
+440a5e45be508bb0a0ed25af62b7dbfe8cf1e142,Bob Ippolito,2023-04-04,SJ-PT-23-101: Remove unused unichr import from encoder
+dbd0aa395f480ef249cff9dc9add54a3035fc9e2,Bob Ippolito,2023-04-04,SJ-PT-23-100: Fix inconsistencies in error messages between C and Python implementations
+59dac4e82cd6766fc31a9389d573d732580eaab5,Bob Ippolito,2023-04-04,SJ-PT-23-03: Backport integer string length limitation to limit quadratic parsing
+1e495c1199f56c2e8e7931f20bda7481842e18ff,Bob Ippolito,2023-04-04,SJ-PT-23-02: Fix missing reference count decrease
+7c2ccb773ab9343e25f14d72356dab75420e288f,Bob Ippolito,2023-04-04,SJ-PT-23-01: Fix invalid handling of unicode escape sequences in Python decoder
+9559fc756deaf20b6bae961b58c5289d8582c8b7,Bob Ippolito,2023-03-14,Update CHANGES.txt for v3.18.4
+feb1a9f17c491f6e6874d4a3c814427d0e56ba7a,Bob Ippolito,2023-03-14,Merge pull request #312 from mgiessing/master
+a2aa50d36656c147d6b86a7f9e376d05dab0ce41,mgiessing,2023-03-13,Update build-and-deploy.yml
+463416cc9f9f7d177f963c31ac33ec8acf199e6e,Bob Ippolito,2023-02-05,Merge pull request #311 from simplejson/test-sdist
+4d098a56628f519e806c0c1ceceb1ce1b6e0d11c,Bob Ippolito,2023-02-05,Bump version and update CHANGES
+a010b32bf0a7c6102d9fc4202b65b5fd37be2ce0,Bob Ippolito,2023-02-05,RE #309 test the sdist
+3725e4eeaf0dfc2a13496e5b78d44846e1a6a555,Bob Ippolito,2023-02-05,Merge pull request #310 from simplejson/fix-sdist
+08991e091d314e0a200711e0b7b401fb6970d868,Bob Ippolito,2023-02-05,Fix #309. Build sdist without any overrides
+64f12484892079e175c7636d006cd74f04e26461,Bob Ippolito,2023-02-04,Merge pull request #308 from simplejson/pure-python-wheel
+fb7f4004788aa939af4e766262a02b9bad0f70a9,Bob Ippolito,2023-02-04,Fix #307. Build a pure python wheel
+c891b95f40711e3dcd23bd4180b5665dce3a2032,Bob Ippolito,2023-01-03,Update CHANGES.txt for v3.18.1
+8c5d43d9c26c44fe9274abf1e0ccccb3e8a2bc4c,Bob Ippolito,2023-01-03,Merge pull request #305 from browniebroke/python-3.11
+21433113f4cb349474256c51a45344adf0934026,Bruno Alla,2023-01-03,Declare support for Python 3.11 and build wheels
+4a22505df8b2e3e19268606ca4e662cfd3fc458a,Bob Ippolito,2022-11-16,Merge pull request #304 from simplejson/version-bump
+f7f03624aad489eaa852e1de9c24194a752fb2ab,Bob Ippolito,2022-11-16,Update version to v3.18.1 and update CHANGES for #303
+edde4ef7dfb79284e07844f996262e61920b4f66,Bob Ippolito,2022-11-16,Merge pull request #303 from sobolevn/patch-1
+2e87970b04a86bcf32cc23151e0002e00e6060b6,Nikita Sobolev,2022-11-16,Clear `i` var from loop not to leak into module namespace
+66c62d841c6f96d782c4f17d7bf63655f0c1666f,Bob Ippolito,2022-11-14,Merge pull request #302 from simplejson/class-serialization
+da213dc37507c4554f64ba6c55c7e5a9bfae8013,Bob Ippolito,2022-11-14,Revert unnecessary change
+41f81a832de7c87210422f4f664aad353822a9bc,Bob Ippolito,2022-11-14,Rename variable for clarity
+2c2c99830cca68cf7e2b7b67ff85397a7b032828,Bob Ippolito,2022-11-14,v3.18.0
+3518a1876755517c3e320da8b451732076fd1f70,Bob Ippolito,2022-11-14,Implement speedups for #301
+ef43c2dff7ec41a58945600027e2150629fd8c48,Bob Ippolito,2022-11-14,Implement tests and fallback implementation of #301
+43645252224d4e529c22cb78ac42f241d6426073,Bob Ippolito,2022-07-01,Merge pull request #300 from Attakay78/master
+e4941c01333247fd9068e7e9f76631e09e5fdd69,Richard Quaicoe,2022-07-01,#299 Comment error fix
+74c95b6d3cafd0b158ab7f8a3a066d0671e5c931,Bob Ippolito,2022-04-22,Update CHANGES.txt and bump version
+d8cee7b2c5696a76e2d0316188b100eea4264354,Bob Ippolito,2022-04-21,Merge pull request #298 from ks888/fix-value-error
+4eee7207da04f974b3b79caf29cacb6f709ad464,Kishin Yagami,2022-04-21,Add the unit test
+6d7fb274abd1f7fdc9de00979217a6933eb76252,Kishin Yagami,2022-04-21,Check the unicode code point range before chr() is called
+02221b19672b1b35188080435c7360cd2d6af6fb,Bob Ippolito,2021-11-15,Merge pull request #293 from simplejson/v3.17.6
+06267cfd1f60f60e33fb13f7b863d207894505f4,Bob Ippolito,2021-11-15,v3.17.6
+695d0741cefa3f68159476d8ab93da3851e559c2,Bob Ippolito,2021-11-15,Merge pull request #292 from simplejson/python-3.10
+31b8e43a160bd331d673c130f83906c31a72b12a,Bob Ippolito,2021-11-15,Build source with Python 3.10, update CHANGES
+0f572cf08178681a762fc1e58ee8354f5d7d1088,Bob Ippolito,2021-11-15,Merge pull request #291 from hugovk/add-3.10
+344a59add183563960c06914a7a5cbef036da21f,Hugo van Kemenade,2021-11-15,Declare support for Python 3.10
+89041df8581ba0e313326cde894ee1a96371cd74,Bob Ippolito,2021-08-23,Update CHANGES.txt
+316b399ba5ea2720710203942e1514bd0a9f00f3,Bob Ippolito,2021-08-23,Merge pull request #289 from simplejson/fix_is_namedtuple_dict_fu
+39a269f8ac829a0e8cb7ee5ff3597227e334b4d0,Bob Ippolito,2021-08-23,Update version to 3.17.5
+e70f4b05c8b661c0930eb2ea3a079ea3dcbaae87,Bob Ippolito,2021-08-23,Implement _asdict() check for pure python path as well
+8dce5b06d3faf9cc439a56dfa3cbdcde2dd8c8ec,Bob Ippolito,2021-08-23,Merge pull request #284 from gpshead/fix_is_namedtuple_dict_fu
+6eeec11fcebf80c314e3a408897ac6c811153f24,Bob Ippolito,2021-08-23,Raise TypeError when _asdict() is callable but does not return a dict
+47d5aa05376670a7eea1f9118fda3c7f8c98c022,Gregory P. Smith,2021-08-23,oops, a missing word made it into the commit.
+f53c2459e477fd81d2659bd8b64e1a10dae5e8cd,Gregory P. Smith [Google LLC],2021-08-20,Move the PyDict_Check after the _asdict call. Add a unittest.
+2b75ded9dbaf6768c0d74e887ea84b8e9124aa86,Bob Ippolito,2021-08-20,Merge branch 'master' into fix_is_namedtuple_dict_fu
+5a40364f951f85ed73d6aaf881f8ee9521a56f07,Bob Ippolito,2021-08-19,Merge pull request #287 from simplejson/upgrade-cibuildwheel
+850fb8d1e7733879018ad8618d032e535fa47fe4,Bob Ippolito,2021-08-19,Upgrade cibuildwheel to v2.1.1
+c901c8cbb5fc67e069011f11fe954908e781470b,Gregory P. Smith [Google LLC],2021-07-16,Fix the C extension module to harden is_namedtuple.
+16f362cacd53abee3e60b14d18536cf32e4219f0,Bob Ippolito,2021-07-09,Merge pull request #283 from simplejson/github-actions
+949aeefd17eea3f597bf549af43d007381cc077d,Bob Ippolito,2021-07-06,Replace travis and appveyor with github actions
+8bef979ad8272cbc2903970f4b9992f603d50973,Bob Ippolito,2020-12-29,Merge pull request #273 from timgates42/bugfix_typo_precedence
+1c5b3a19c258ada99f60d35878428eff0a655136,Tim Gates,2020-12-29,docs: fix simple typo, precendence -> precedence
+cad8305713c007864aaf556bf0cfa48823aed3ab,Bob Ippolito,2020-12-18,Merge pull request #271 from cclauss/patch-1
+c28666f98ae3fb7939e2d3c3e98a12d5a631a1be,Christian Clauss,2020-12-18,Travis CI: Add Python 3.9 to the testing
+c51668542b406c5aadb052a1513245307cc8b014,Bob Ippolito,2020-07-16,v3.17.2
+b84486a2ada6c20f7752d40e7a699e6814460b20,Bob Ippolito,2020-07-16,Add manylinux wheels back for amd64
+540950455a6c1c7d8e7a59d695308c8b62c5413a,Bob Ippolito,2020-07-16,v3.17.1
+d420ed2a927ee51167f89d254ad534e718bf1ff6,Bob Ippolito,2020-07-16,Merge pull request #264 from odidev/arm_support
+c6ce62b3b5b05dccd1bb54756c970340fa4e0c6c,odidev,2020-07-15,Added arm64 support in travis-ci
+aedb7c96eeadea8bee77f4e1f8d25f3728da0fb7,Bob Ippolito,2020-04-17,Resolves #261, improve README grammar
+288e4e005c39a2eb855b5225c5dc8ebcb82eee72,Bob Ippolito,2020-03-14,Merge pull request #260 from simplejson/pep-0527
+0c46bf7a3f3c1f719bcfaa8a470e2363feb6632b,Bob Ippolito,2020-03-14,Update travis matrix
+23d0391255ad72fb342097bcbf056a9388b1b250,Bob Ippolito,2020-03-14,Per PEP 527 stop building bdist_wininst
+6cbbd1859f7ff219c19f68d3063842cdd6db1885,Bob Ippolito,2019-11-17,Set version back to v3.17.0
+07a67957ddb2d55e6d8994474c0e18c9c7d967a7,Bob Ippolito,2019-11-17,Bump version to v3.18.0 to work around build issues
+ea425570fa750f5492bcf6560b3ce6bbda3cd264,Bob Ippolito,2019-11-17,Rotate API key again
+f1b11ee7d3671ad71809fa083e08ed4bd2e48b65,Bob Ippolito,2019-11-17,Remove old API key
+dadfd873c7dcada313af90e7f214ede8bbe95f37,Bob Ippolito,2019-11-17,Update travis deploy key
+2e0c0e4de3cb50fe3e354c738575cdd75ec09ff3,Bob Ippolito,2019-11-17,Merge pull request #257 from simplejson/python3-doc-updates
+de2192b371a752638822be5c70b5fac17ac23b4e,Bob Ippolito,2019-11-17,Finish updating docs to be Python 3-centric
+77d00d27e7f3628598742be6ac0440aa31e53a35,Bob Ippolito,2019-10-22,Start transitioning docs to be Python 3 centric
+2928fff79b09a9a7165ef34abd69fc2ee1ec341a,Bob Ippolito,2019-10-20,Merge pull request #256 from simplejson/python-3.8
+1a2b07b552f0896800cfc968a9ec255d923e49f0,Bob Ippolito,2019-10-20,Update build matrix for Python 3.8 on Windows
+edf16cb9523e7e77834a65c8de8fdee82f93bc32,Bob Ippolito,2019-10-20,Merge pull request #255 from cclauss/patch-1
+14efb7d1a06ec6dce042cf2829fbd8d51bb82250,Christian Clauss,2019-10-20,Python 3.7.4 on macOS
+0aa49d534bb3817d801e06776afef0e013ffb11f,Christian Clauss,2019-10-20,Python 3.7.4 on xcode11.2
+a4d89f65299c8029bdf13593c155897697ce35fc,Christian Clauss,2019-10-20,Travis CI: Upgrade to Python 3.8
+5fccfc1d88cc70455d013fbf13f9a49a19cd7929,Bob Ippolito,2019-04-17,Merge pull request #247 from cclauss/patch-1
+36616742c40f9c111ff5e5531e0191d0a7386a59,cclauss,2019-04-17,Preserve the sort order
+327051a2e6f0f0c8c7811a8e41333b6a91e0818c,cclauss,2019-04-17,pypy and pypy3 NEED Trusty
+0869ac012909e93add21a4a4e21d9bb63ceb058a,cclauss,2019-04-17,Python 2.6 and 3.3 NEED Trusty
+242a36be4a1ca114c5b14bd18b2ae6ceb4288e0a,cclauss,2019-04-17,Travis CI: Simplify by upgrading to dist: xenial
+5043f33c1cf172af081c71e1841a1ada44a4fa92,Bob Ippolito,2019-04-17,Merge pull request #246 from cclauss/patch-1
+742213b8649951ebd6121ced7126aa3b4b897ce3,cclauss,2019-04-17,.travis.yml: The 'sudo' tag is now deprecated in Travis CI
+ce75e60c6c659492cc67cd628347899291723c40,Bob Ippolito,2018-09-08,require docker and sudo for xenial py3.7
+ecadac35d5f50aa4db6e5fed695f6cd0a2b4f6ac,Bob Ippolito,2018-09-08,Disable BUILD_WHEEL until we know it works, re #181
+98c486a99315a5b28b24636c5de8d1760ef5eec9,Bob Ippolito,2018-09-08,Merge branch 'master' of https://github.com/simplejson/simplejson
+1bac22505d63c9e94827c04cc7352ce82ca175d3,Bob Ippolito,2018-09-07,No longer signing releases
+a3bdbbd50f359cbf7cfbbbffdd8a71cc66b84b55,Bob Ippolito,2018-09-07,Simplify travis config
+bfa10c093f2bcdd1fd161101d3934af96e7233c5,Bob Ippolito,2018-09-07,Add appveyor status icon
+148d73cfeba67291cb5173fd3398f33845a9fea0,Bob Ippolito,2018-09-07,Update CHANGES for v3.16.1
+4daab06c97bc14fc35a31d6e4433131b618c4c4a,Bob Ippolito,2018-09-07,Merge pull request #236 from simplejson/json-lines-example
+26524a0d907dda3fee69055026922876b309f8f3,Bob Ippolito,2018-09-06,Prep for v3.16.1 and add JSON lines example
+ee25b0c7faeb072e2dd5bc3925bd8dc6fbb04d93,Bob Ippolito,2018-09-04,Merge pull request #235 from simplejson/felixonmars-patch-1-1
+1e57b3ad218df1b44d9d4360ebd4c784adbc0c39,Felix Yan,2018-09-05,Update appveyor.yml
+e2a54f71bdcaf73b6b55cf553d62ab87c2ef6c68,Bob Ippolito,2018-09-04,Merge pull request #233 from simplejson/travis-py37
+58b5cd7fe2417abd05a44d8acbe4a3ee88ab6f4b,Bob Ippolito,2018-09-04,pyenv on osx is not up to date yet
+44130e3327a504b7306b827fec07dfb50594a56f,Bob Ippolito,2018-09-04,Merge branch 'master' into travis-py37
+f0a1bd8baec5f9ae61afd1c374abed78e995550b,Bob Ippolito,2018-09-04,Merge pull request #234 from simplejson/appveyor-py37
+734ecc2452d7a749b60de48890bd2282088432e9,Bob Ippolito,2018-09-04,Change pyenv clone URL
+cd63aad915c92052d25abcb509f07a06df56c080,Bob Ippolito,2018-09-04,Use xenial distro for Python 3.7
+c49033dda5c6130a20bb8723e82e46ff2630e1b3,Bob Ippolito,2018-09-04,Add Python 3.7 to appveyor
+bd64f618e89b3eb4a4b21e8a446c9694365a0dc2,Bob Ippolito,2018-09-04,Add Python 3.7 to Travis
+2ba490b151d4caeb0394d14bf579949591404751,Bob Ippolito,2018-09-03,Merge pull request #231 from ushuz/manylinux1-wheels
+57ea0c5d23a6def78f35c039fb0b561bff3aaf61,John Hu,2018-09-03,Build manylinux1 wheels with cibuildwheel 0.9.4
+543b4232813d3be2231124d27f7ae9b95be1beb6,Bob Ippolito,2018-06-28,Update CHANGES for v3.16.0
+131d225786a98c2c2da5a1dfbbf9db0491fe9ac6,Bob Ippolito,2018-06-27,Merge pull request #225 from benjaminp/empty-str
+48d4f134f971c4cb7a67804a5aa8402e81298057,Benjamin Peterson,2018-06-26,fix indentation
+1f4d59c479a0d9bb26a977d2b3fd3c5631c71aa8,Benjamin Peterson,2018-06-26,add test
+fad6c2b09cb4e9c352ed4c4cc55a2259a97a02be,Benjamin Peterson,2018-06-26,On Python 2, decode empty strings as str not unicode.
+00ed20da4c0e5f0396661f73482418651ff4d8c7,Bob Ippolito,2018-06-19,Merge pull request #224 from hugovk/python_requires
+ffd38e498f3fb9d4ede38c4a255ff595355abcad,Hugo,2018-06-19,Add python_requires to help pip
+c951033b33b9525e823d0a0f214c3defa9dd9327,Hugo,2018-06-19,http -> https
+d5810ccd5c89e4691c2ab27ea3ca05de4845f547,Bob Ippolito,2018-06-04,Merge pull request #222 from simplejson/doc-css-fix-gh-221
+50a57475d1c0feabc27f4ae0f9c76a33c5fedd8a,Bob Ippolito,2018-06-04,Fix #221. Allow Sphinx to set css file name
+67d48f67e601bd644f8de975c3287015e4258be2,Bob Ippolito,2018-05-12,v3.15.0
+424a9e9aabba6f000def57c470a18a44076737d8,Bob Ippolito,2018-05-12,Merge pull request #220 from simplejson/speedups-cleanup
+1bd31cb46b088ed0b3c12f3c6bc4d725c755a1e5,Bob Ippolito,2018-04-25,Merge branch 'master' into speedups-cleanup
+476e08369fd151a982cb5aaaacd92a50eccce9f8,Bob Ippolito,2018-04-25,Merge pull request #219 from simplejson/str-decode
+f35e2e2d6aca34c4b9ce2e3d61568fc6d09a6b9d,Bob Ippolito,2018-04-25,Merge branch 'master' into str-decode
+a0b9681c7fb2cf16ac49dcd80c4b3d7d79c665c4,Bob Ippolito,2018-04-25,Merge branch 'master' into speedups-cleanup
+7a2c88f768084a41eabb137d6e82f4ed2be0ce54,Bob Ippolito,2018-04-25,Merge pull request #217 from simplejson/cStringIO
+ef1bcb820515464f3701c74a7b3dda2fa3b1d1e8,Serhiy Storchaka,2018-04-25,Clean up the C code.
+831764b485060d11f903e050904d53ac42337d16,Bob Ippolito,2018-04-25,Fix the other comment typos
+3e5e4420f7de79956c1ec2d909e994ab142c2930,Bob Ippolito,2018-04-25,fix comment typos
+1c22a813294d98176decb516dcd5834a09f79c32,Serhiy Storchaka,2018-04-25,Bypass the decode() method in bytes subclasses.
+7c7b77d4beae7d2c69947fb1374177ce2095af4e,Serhiy Storchaka,2018-04-25,Support builds without cStringIO.
+4af3c417547b4a0505e4b1baa5dbd360b7665e7e,Bob Ippolito,2018-04-24,Merge pull request #216 from simplejson/bytes-encoding
+12e30827bc6224a133a1ccfb977c0bccb0c84576,Serhiy Storchaka,2018-04-25,Allow to disable serializing bytes by default in Python 3.
+2ec708bbc884b956c453eb057547cf0150294be9,Bob Ippolito,2018-04-24,Merge pull request #215 from simplejson/compat
+2cd78252932f41a665deaf0ce8f194723c91919c,Bob Ippolito,2018-04-24,Merge pull request #214 from simplejson/tempfile-py25
+51b69877435b8503b0400eb54461cded7f103ecb,Serhiy Storchaka,2018-04-24,Simplify compatibility code.
+32bc1a74a52c0ac81fd65d3f08a4dd94489bf32e,Serhiy Storchaka,2018-04-24,Fix tests in Python 2.5.
+729945a655b2c351ad4c91293a494c066f3bb152,Bob Ippolito,2018-04-21,v3.14.0
+967a3b33f6df1eb360cb41753f859c5ba309e09e,Bob Ippolito,2018-04-09,Merge pull request #212 from richvdh/rav/defer_is_rawjson_test
+17c8dedb66001dc89cb219b1dc1194d0a815b9d3,Richard van der Hoff,2018-04-03,Defer is_raw_json test
+ca2f85ed1f6a7d7679af942faa695f95c30ccbda,Bob Ippolito,2018-04-02,Merge pull request #211 from richvdh/rav/fix_linebreak_encoding
+3309d122f922540102da1463744e1ad54c3ccb18,Richard van der Hoff,2018-03-29,Remove redundant parts of ESCAPE and ESCAPE_DCT
+f3ac28677376720c84f60cb74dd9f1ba8fd4f807,Richard van der Hoff,2018-03-29,documentation updates
+e45a6ae5df74d0881d9d9e5f6cd28e6c4d336637,Richard van der Hoff,2018-03-29,Update documentation for JSONEncoderForHTML
+8ea5f90e6eadcf6a1ce4bb3908e954f7253aa3ae,Richard van der Hoff,2018-03-29,Improve docstring on JSONEncoderForHTML
+05b8f6dfdfcf49cc1f7ebf8bbb38b7be274ad40f,Richard van der Hoff,2018-03-29,Simplify ESCAPE regexp construction
+19012377f349da419f80e91ecd41d5f09f90d32b,Richard van der Hoff,2018-03-29,Avoid escaping U+2028 and U+2029 without ensure_ascii
+0406430cbcb0e31d27bd064db57837b94ed05294,Bob Ippolito,2018-03-27,Update CHANGES.txt and increment version to 3.13.3
+d6b29ef522df2c3f7e26718e8578c89e9d733d83,Bob Ippolito,2018-03-27,Merge pull request #210 from richvdh/rav/avoid_string_copy
+4e4ee05652472acb3bde31c5ad138b35d6c7dce9,Richard van der Hoff,2018-03-27,Avoid copying strings when encoding
+6ffddbe5ed6e4e72fbc7f6023439227970139159,Bob Ippolito,2017-12-10,Merge pull request #199 from simplejson/setup-classifiers
+3b26a2e989ebb6c5658d73eebf65fa3648d27832,Serhiy Storchaka,2017-12-03,The classifier parameter in setup.py must be a list.
+3cf08530a1be05cbaa80b167fe7f335b13cbc869,Bob Ippolito,2017-11-24,v3.13.2
+21bb1ebff80400309952a9353698802b762a4984,Bob Ippolito,2017-11-24,maybe fix windows 2.x build
+42ec87d0a3c14b8d4536900868e6a95d96431672,Bob Ippolito,2017-11-24,v3.13.1
+518401fc950fb76848f9a170e3cfb35b5dfcfbff,Bob Ippolito,2017-11-24,fail build in CI if speedups do not build correctly
+708026ea6ee10ffa15b9a28d5b06bb9b45a9da24,Bob Ippolito,2017-11-24,Merge pull request #194 from simplejson/speedups-compile-error-2.7
+888ddb08ff0ed2e37138a2bae4927c7d6917ba74,Serhiy Storchaka,2017-11-24,Fix a compile error on 2.x. Closes #193.
+dd1762e1b9bbdca4a35df0b016167796505d56a4,Bob Ippolito,2017-11-23,also upload tarball
+c165de2f020b34ff335339fb12e618acea384914,Bob Ippolito,2017-11-23,build sdist from travis
+6e0bd8e88b56b0bb3b67b092972acdbab1f6b202,Bob Ippolito,2017-11-23,fix artifact matching
+a957ff6cd638213d559674035262133a2b842be8,Bob Ippolito,2017-11-23,fix appveyor.yml
+d53d0c6e23171a62f4a26094b2f23f36eb4d3fe4,Bob Ippolito,2017-11-23,Fix string encoding for Python 2
+47bb9950941aed34aef4fcad3fd20a2585c696f2,Bob Ippolito,2017-11-23,Ensure that encoding text subtypes is consistent with or without speedups. Fixes #185
+0fd73bc8c6ad200754cce837ba8c97715e95ee25,Bob Ippolito,2017-11-23,update CHANGES
+9127262d5c5ddc572c298ecd9f99fd426a9e9584,Bob Ippolito,2017-11-23,Merge pull request #191 from simplejson/type-error-messages
+db043ca417f328f3bfc1ce36ab0ea8bab9f257c5,Bob Ippolito,2017-11-23,update appveyor config
+5c57849b24fae8c071cbf62f205046d8120a0c80,Serhiy Storchaka,2017-11-23,Add tests.
+83c36e41df1f3187e7aaabd88453f2f03c1b803b,Bob Ippolito,2017-11-23,Update version, add *.pyd to gitignore
+5b74a43375bb2597b047e546d6cab778100d1861,Bob Ippolito,2017-11-23,Workarounds for NamedTemporaryFile issues with Windows for tool tests
+61fae0c2dac6a0769a0b6e49320e613e498adc11,Bob Ippolito,2017-11-23,v3.12.1
+029bc2bf1a12146082a9c453d5965be0b7266dc6,Bob Ippolito,2017-11-23,update artifacts.py to avoid none-any wheels
+a2fd6a11dd4d9444ce745fad4263d10766c5a454,Bob Ippolito,2017-11-23,added editorconfig
+529268f5098810d6d7f589b63d0e7c3ad47102d7,Bob Ippolito,2017-11-20,Merge pull request #188 from simplejson/bpo-31505
+6df3ec19a81029ef035266a96505f814d8d6ccac,Serhiy Storchaka,2017-11-10,Make TypeError messages contain type name instead of a repr. The failure depends on the type, not on the value of an object.
+138a2ff3f6db37468f3c7509f69c984792fd49a0,Serhiy Storchaka,2017-11-06,bpo-31095: fix potential crash during GC (#187)
+113039ae96e670b8f7441d5b1d2c40d9b0b75f56,Serhiy Storchaka,2017-11-06,Fix a reference leak when sort keys. (#186)
+eb9665a751e8aea21aeedea02ae6617ff53eeaad,Serhiy Storchaka,2017-11-06,Fix a test.
+5decd38112c02dbd646c2d13b9563460ee15eb4b,Serhiy Storchaka,2017-11-06,bpo-31505: Fix an assertion failure in json, in case _json.make_encoder() received a bad encoder() argument. Original patch by Oren Milman.
+ef4015d1d997c234d2bb604b4d858e04cdbceeb3,Bob Ippolito,2017-11-05,Add Python 3.6.3 to appveyor
+0d36c5cd16055d55e6eceaf252f072a9339e0746,Bob Ippolito,2017-11-05,Fix #184 threaded import issue, prep v3.12.0
+db2a216a858e8fd2cbfd53ac52c7972e5d3b3c5a,Bob Ippolito,2017-07-08,see if pypy will install without dist: trusty
+e529046d4c7cb1f3b15fe41bfcdb1a0628a25a86,Bob Ippolito,2017-07-08,newer versions are not in pyenv for some reason
+9d566ea16567b1834e9708fb3fd1aa98dea2d72e,Bob Ippolito,2017-07-08,sudo: false
+362113aafa91ea2825b56fb5933db57e2914cac2,Bob Ippolito,2017-07-08,Add pypy3 and update osx python versions
+371261e3a0ae832d6d9aa2f34c20d82a5c10106d,Bob Ippolito,2017-07-08,Merge pull request #179 from taleinat/patch-1
+833c84dce6ed3a6d06851ae47bf3cced5b77a031,Bob Ippolito,2017-07-08,Merge pull request #180 from felixonmars/fix-typo
+8b28e157074b640406d2f0d217e36fb59fc8bb12,Felix Yan,2017-07-01,Fix a typo: verison -> version
+687d0e80f377c252451a4067acbcdc2e1db88a00,Tal Einat,2017-06-28,setup.py: fix condition for build_ext exception types
+cae6d7b381bc07ed6aad97a52a41713ee29c6a37,Bob Ippolito,2017-06-19,Merge pull request #176 from simplejson/fix-173
+fe3ab46207309c703ef011945ac08bbbeb4cc72c,Bob Ippolito,2017-06-19,v3.11.1
+59e9bbf023cff1684786d7fb0ae3d0501f96ecb6,Bob Ippolito,2017-06-19,Fix #173 with item_sort_key and add auto-discovery to test suite
+52550b07f2e39d53d55ec13aedc5421959168ecd,Bob Ippolito,2017-06-18,v3.11.0
+b166c2b593d32b3d5a0866554aded44bf21f6297,Bob Ippolito,2017-06-12,Merge pull request #172 from jcerjak/docstring-fix-for-use_decimal
+8edc82afcf6f7512b05fba32baa536fe756bd273,Jure Cerjak,2017-06-12,docstring fix in JSONEncoder: use_decimal defaults to True
+de28cced9a9a5ff1a7a93eb52bd2a52a01d0476a,Bob Ippolito,2017-06-08,Merge pull request #170 from simplejson/strict-to-bool
+6e722ab1547c812d81e30e179c102fe70f63ba6b,Bob Ippolito,2017-06-08,Merge pull request #171 from simplejson/unencodable-encoder-encoding
+9cef9f5951eabaf010fc0b8d08b2d6e0c7dcf526,Serhiy Storchaka,2017-05-21,Fix a crash wish unencodable encoding in the encoder.
+b59c349235178046664b248c850c3eb589430c92,Serhiy Storchaka,2017-05-21,Call PyObject_IsTrue() only once for the strict argument of scanner.
+e84076f2cac4dd3cc98ed947316928cb5ba7c9b2,Serhiy Storchaka,2017-05-21,Make test_speedups compatible with Python 2.5 and 2.6.
+8f9157e6d0649333f549afaed0d79aecfe133aeb,Serhiy Storchaka,2017-05-21,Make test_speedups compatible with Python 2.5.
+c6ceb19322a64f8fd7158343861478c0538deabd,Serhiy Storchaka,2017-05-21,Added missed ";" in Python 2 only code.
+3cfafa4865d6a97f7f92d04c9434a04fe82c5df0,Bob Ippolito,2017-05-20,Merge pull request #162 from chrisgavin/unused-imports
+02168b6319a508558129ece2354906d0cd6b170b,Bob Ippolito,2017-05-20,Merge pull request #168 from simplejson/no-py2.4
+31e85c0cb7eae5d6e161a6f10ed56578b4b4ae9e,Bob Ippolito,2017-05-20,Merge pull request #169 from simplejson/check-is-true
+1faea8515e92c27c91c6bc2e6ab06c120b4fe950,Serhiy Storchaka,2017-05-20,Merge branch 'master' into check-is-true
+881ae6dafa73b2fe526182ecc426861899fcdb97,Bob Ippolito,2017-05-18,Merge pull request #166 from simplejson/remove-init-methods
+aaa16a53f721027695ffe68d361d58871a224c08,Serhiy Storchaka,2017-05-12,Fix argument checking errors in _speedups.c.
+881c62b215822fa3dcd79c78e72b761c34032274,Serhiy Storchaka,2017-05-08,Don't set tp_new to PyType_GenericNew.
+09e6e009878587ce7d65651dc35cf1f276f5dbd9,Serhiy Storchaka,2017-05-08,Fix a typo in the doc for loads (#161).
+b715bfee8f04d7b46fba62ec9d9ab95fe1a61ffd,Serhiy Storchaka,2017-05-08,Remofe remnants of Python 2.4 support.
+60b293d3449491264a83c7ed9d5f4a0aba4db989,Serhiy Storchaka,2017-05-07,Remove the `__init__` methods in extension classes.
+f3d815124841e3ece1b234b16c65370efe45ff3f,Chris Gavin,2017-04-24,Remove unused imports.
+f1a06fc7598f324acee332b02b6ecc43773b7b5d,Bob Ippolito,2017-01-17,Merge pull request #153 from hugovk/patch-1
+b5408dff2bd72252137886dc4bb81cd1f0b170b6,Hugo,2017-01-17,Update Python versions
+1f95547b6dd2348189e66ed0e0c1a20899360351,Bob Ippolito,2017-01-16,Merge pull request #152 from hugovk/patch-1
+e3a7de8cfb3de1d25f0c8cdbdef22e2a5ebc01d9,Hugo,2017-01-16,Python 3.6 is out
+c52efea57d0f733d28eb991eeebb121c53b3a48a,Bob Ippolito,2016-10-28,v3.10.0
+e2f4fe262576c659dad214c1144cd941dcf400b8,Bob Ippolito,2016-10-28,Merge branch 'lamflam-raw_json'
+dd0f99d6431b5e75293369f5554a1396f8ae6251,Bob Ippolito,2016-10-28,Bump version, update changelog, fix issues identified in code review of #143
+392e2e7b51635b060dafdb4a08c130fa26421685,Bob Ippolito,2016-10-28,Merge branch 'raw_json' of https://github.com/lamflam/simplejson into lamflam-raw_json
+3233faaf438690d0aa853d131ead4a9c99935485,Bob Ippolito,2016-10-23,use correct pyenv in run
+a93c7b37b54d231ec4417a57a60fd87dcfe4e23e,Bob Ippolito,2016-10-23,rehash before and after eval
+6800e367edd94f7158d8d0280ad3fb1fad37e41d,Bob Ippolito,2016-10-22,Only upload exe and whl files
+6bf95ee0d181b5f7d0121d362c8ba81ede4819d8,Bob Ippolito,2016-10-21,add signing and uploading artifacts to the script
+1e184eac6988edee1cdd0f45cfa4c390fc1eea5e,Bob Ippolito,2016-10-21,remove unnecessary URL
+38f8c2e3a43a884d1e7b49941d4472887804613c,Bob Ippolito,2016-10-21,v3.9.0
+84b90d3ecf11397d87b6175e30eb5cb884cef8df,Bob Ippolito,2016-10-21,Bump version to 3.9.0
+d78256146d2831e3a7080b7212d7edb90bc2d611,Bob Ippolito,2016-10-21,Fixes #144. Workaround for bad behavior in string subclasses.
+9902c546bcf2133b4961502d71bac908d55da40c,Bob Ippolito,2016-10-21,Update Python versions used for Mac builds
+628628262f6af194b7621588b41cfe7ff8f2df8b,Bob Ippolito,2016-10-21,Another attempt to fix Travis Mac build
+4d551b2c8ff11222b46cb14d80528def041aaa5e,Bob Ippolito,2016-10-21,Update CHANGES.txt
+d5234f7991ca23fad63ce10648d6f6cadc1a09ff,Bob Ippolito,2016-09-26,Merge pull request #146 from rowillia/master
+36a4461263ff904436cfab1f88638fe7162fe176,Bob Ippolito,2016-09-25,See if we can get those OS X builds working
+074e5f4fcf2aecd4fe648ea273da6f0d8c471fdf,Roy Williams,2016-09-22,Remove fromhex all together
+a1cd6421d095af6c7db5e5c44e14916eb555aade,Roy Williams,2016-09-22,Add support for Python 2.5
+bb1d5c819ec06a3c085fe265f9b6f92752127a28,Roy Williams,2016-09-22,Use binascii instead of codecs
+8f8a95e568df1fe5eee1833a8553617f0cae7dfa,Roy Williams,2016-09-21,Use `codecs.decode` in Python 2 as opposed to `str.decode` in Python 2.
+da17e3529c4e41173519ea18ff3ee908761ef5d4,Kevin LaFlamme,2016-09-01,Add support for preprocessed JSON strings (with optimizations) in encoder
+4b1dab370f8a32aaa3f9140c38645093d3287b82,Bob Ippolito,2016-05-30,Merge pull request #137 from adamchainz/readthedocs.io
+c80be5d00fe278cef3d76b6d68b8918ed849c99b,Adam Chainz,2016-05-29,Convert readthedocs link for their .org -> .io migration for hosted projects
+23688e6d8b29fb1d1ea7ecf5d4d6e5c79402cf30,Bob Ippolito,2016-03-12,Merge pull request #134 from compwron/rst_readme_build_status
+d1f2f1a5a754cffc649ed10c04433b7860eeb0ca,lgoldstein,2016-03-09,Readme badge and py2 link
+92c80f3b29c4d8694deb72779fa65f8de0ff8965,Bob Ippolito,2016-02-15,fix artifacts script
+8aaf1ca7d6cda799997815591c1c82e70c51a633,Bob Ippolito,2016-02-14,v3.8.2 - fix compiler warning, automated wheel builds for Windows and Mac
+60227944e9879362f9a4e09dfaae605273cdfc8c,Bob Ippolito,2015-11-22,Merge pull request #130 from aebrahim/appveyor
+e394003ba5660dd4c068b99a1b43456166159f94,Ali Ebrahim,2015-11-22,build windows wheels on appveyor
+2510da1961f95ea7d642d1b61bcd270b90962f54,Bob Ippolito,2015-10-27,Add Python 3.5 to Travis test suite
+b979a80722bfbcecc6cde366449e1e0b605c51b6,Bob Ippolito,2015-10-27,Fix issue with iterable_as_array and indent option, closes #128
+82fdecb6a892579bde16f43b4b983b9dce6c3643,Bob Ippolito,2015-09-04,Update version to 3.8.1
+92cecfe676bd943c105604c97d8502769d6a3567,Bob Ippolito,2015-09-04,Merge pull request #123 from costypetrisor/fix-int_as_string_bitcount-from-speedups
+ddf57dc2201a1f7517dd2ab4b0a232a6929b9db2,Costy Petrisor,2015-09-03,removed from _speedups.c  forgotten "iterable_as_array" without comma after string
+a37a9bdb821ea94bc5e566fe9f6db2029df39447,Bob Ippolito,2015-07-18,clean up iterable_as_array for 3.8.0
+a9e5e7256c9fb27126813c9430be1dab5f27f7ba,Nick Babcock,2015-07-10,Merge branch 'master' into iterable_as_array-gh1
+0bcdf20cc525c1343b796cb8f247ea5213c6557e,Bob Ippolito,2015-05-31,fix typo in e18cc09
+c2190efda0e6fdd6783a56a6aeab818b072350a1,Bob Ippolito,2015-05-22,attempt to work around an issue with reloading the Decimal module
+71c3672396b32b62f35c53668182720f8f3d5ecc,Bob Ippolito,2015-05-18,bump version for #119
+2161a68dd029cbfef8b45107b875eb8212ba28ed,Bob Ippolito,2015-05-18,Merge pull request #119 from cgohlke/patch-1
+c082e7529da3396bb1c8205ec7c659a863c771b6,Christoph Gohlke,2015-05-18,Fix msvc error C2275: 'PyObject' : illegal use of this type as an expression
+e18cc09b688ea1f3305c27616fd3cadd2adc6d31,Bob Ippolito,2015-05-18,no longer trust custom repr for int/long/float subclasses #118
+f9e8ca4be17a32067e02805e7771635ee2af4aa3,Bob Ippolito,2015-02-18,Merge pull request #116 from d0ugal/patch-1
+151b4c1d110b2984b0af2d419c6485169f8305e7,Dougal Matthews,2015-02-18,Fixed a typo in the docs
+d52cd59d28766c72314537e2a087665b8b54fa9b,Bob Ippolito,2014-10-24,update CHANGES and bump version to v3.6.5
+99d3082b8edef1e6b43e2a3971e7cebf2cde6608,Bob Ippolito,2014-10-24,Merge pull request #110 from kbussell/memoryleak
+e8c7018ba06ef6a5709b6242684bd06d9964904e,Keith Bussell,2014-10-23,Fix memory leak when an error occurs encoding dict items
+54d5ff15d508c51366986cc4f77f2f287f036582,Bob Ippolito,2014-09-29,Merge pull request #107 from simplejson/sort_keys_dump-106
+ccc8a2bc450f8b7f6db71a6daef4d4b069ba5851,Bob Ippolito,2014-09-29,failing test for #106
+77437f037f99e9df49dab740b32bdb20af93af44,Bob Ippolito,2014-09-29,update version for v3.6.4
+c510dd0285bbce594fd772b462eb859a39bf4a9f,Bob Ippolito,2014-09-24,ensure cached encoder is only used when all settings are default
+2e83d7cc9388678ef750f7ccfa30947eed47e73d,Bob Ippolito,2014-08-18,documentation about key limitations in JSON per #103
+baf6d6445c289f5d7eb5dbb14de65de48fbf56ad,Bob Ippolito,2014-08-09,doc updates from http://bugs.python.org/issue21514 re: #102
+0ffb14c0b466891821d219175b1a463a7f81dfe1,Bob Ippolito,2014-08-09,Merge branch 'docs-102'
+1ddfc5ace82f4fbda2a6a85c62a063ae45c94576,Bob Ippolito,2014-08-09,update documentation per #102
+39636bbe3f19a66d2b8ff5dfbe126f20af12e73a,Bob Ippolito,2014-07-22,forgot how to reST apparently
+b08ac92aa285620878e8c88c9f08311b94aa3dbe,Bob Ippolito,2014-07-22,make note of the python2.2 branch
+46d42a5245607745eb39da83f0ca250d9c3eff52,Bob Ippolito,2014-07-21,v3.6.0
+78441805700f1adccfeb4e454fa025e637b9a16b,Bob Ippolito,2014-07-21,Merge branch 'sporty-master'
+925cae72acd6a0d2a789cdc363736ed826f8ffa6,Bob Ippolito,2014-07-21,generalize BOM stripping to any use of raw_decode
+3eaa8d54dfed8cd64c9f439451f5514f45cd4dd4,Ryo Takahashi,2014-07-21,strip utf-8 bom.
+b7486b82233ed2ec1a614dcf8944d376d12d04bf,Bob Ippolito,2014-06-24,Fix lower bound checking in scan_once / raw_decode API #98
+a19d53c1df389648b31619eda67cb178f8f00036,Bob Ippolito,2014-05-23,update version for v3.5.2
+8f1778402eff0dd3107c68116e8cdfcecce29ee4,Bob Ippolito,2014-05-23,Merge pull request #97 from mindw/vs2008_build_fx
+0ee8ddb5a6a6afaf62b73c76fc0f0d1d770fe33c,Gabi Davar,2014-05-23,fix build for VS 2008
+1c0ea7f4d3c85cee6904b312922fd50e24e08e78,Bob Ippolito,2014-05-22,consistently reject int_as_string_bitcount <= 0 #96
+28f1c547909102d2476cca8596f2eac4a7193b65,Bob Ippolito,2014-05-21,detab
+8741b67c403773706d2374161f1b87da2e1aa59b,Bob Ippolito,2014-05-21,clean up #96 and prep for v3.5.0 release
+c43b3c5b8066f8f3c42de6e3ac4840a251d55c78,Bob Ippolito,2014-05-20,Merge pull request #96 from coldeasy/int_as_string_bitcount
+9fa5a3d591e270df40d241ac767e90a16a9caf0e,Bob Ippolito,2014-05-20,fix arg check for item_sort_key
+3f1f90c1f0684c6f99de4076e47e9a771b0c7d79,Colin Deasy,2014-05-20,Allocate int_as_string bounds once per encoder
+426849c9134e203903a00595f345013327068aaa,Colin Deasy,2014-05-09,Adding `int_as_string_bitcount` option
+72b03f213ec0def34930f1b04f66f71a27f27665,Bob Ippolito,2014-05-06,Merge pull request #95 from DanielBaird/patch-1
+38842978c470d64fae568ed77471ba31fd1676be,Daniel Baird,2014-05-07,cleaned up double-paste in separators description.
+88ac2f35519afb8099dbb7861ff476896d577206,Bob Ippolito,2014-04-30,fix tests to run on Python 3.4
+080376336e79d712ba56ba76ad00047b0023d13b,Bob Ippolito,2014-04-30,Merge pull request #94 from hugovk/patch-1
+581555900bbf693ae0e05c637ceb09f3f7390d49,Hugo,2014-04-30,Travis CI now has Python 3.4
+6175d2919e8a24260cfce3c489ba7d0a0bdb8e84,Bob Ippolito,2014-04-02,bump to v3.4.0
+85c57048bf308d7ad74a1a50d8c54a57c9707a8f,Bob Ippolito,2014-04-02,Merge pull request #92 from Infinidat/master
+1b5f020aabd5fefb52f60f167aa385154c226093,Guy Rozendorn,2014-04-02,bringing back bdist_egg build support
+59dc5296f731f868678cbdcba199a77a0513e5c1,Bob Ippolito,2014-02-14,improve Python 3.3 compat #87, bump to 3.3.3
+a03499478fa57299798c68bbab1c5285a26a4a73,Bob Ippolito,2014-02-10,add comment about setuptools usage #85
+eeab055a39ef62a45725c554c1eebf86a3beeb48,Bob Ippolito,2014-01-06,travis no longer supports python2.5
+7d4ea580816a52fb2d762464cdf66108956abdc2,Bob Ippolito,2014-01-06,update CHANGES.txt for v3.3.2
+41f336d71f81d283d7afb6c7d5d1b402eccb9782,Bob Ippolito,2013-10-31,Merge pull request #82 from JuhaS/patch-1
+a7c32c1814da50d47b13102b5c84bec2e91058b5,JuhaS,2013-10-31,Documentation fix for decoded string types
+d59550cc9bf62bca93b52480536e94707e789579,Bob Ippolito,2013-10-05,update metadata for 3.3.1
+475ef1c3b3a7a1bee8b9339336a077ce905ddc4f,Bob Ippolito,2013-10-05,Merge pull request #78 from idank/master
+e787c8b9d1155023089937314fd2b965821f2108,Idan Kamara,2013-10-05,fix pickle breakage with JSONDecodeError
+35816bfe2d0ddeb5ddcc68239683cbb35b7e3ff2,Bob Ippolito,2013-05-07,pass-through in decoder for lone surrogates #62
+fc7b04d6bb1bfc0ffdddbd7d53ffd56f4142ea34,Bob Ippolito,2013-05-01,update release date
+236c8a174c0e333608e992f6f7ec7826c2fd1cd8,Bob Ippolito,2013-05-01,ignore_nan #63
+928421f68ff2128c5397553a57f3d76a75e39ca4,Bob Ippolito,2013-05-01,update CHANGES and tests
+c5512d65c2085f6ed91b5f7e3684dbf557bc29f3,Bob Ippolito,2013-05-01,make argument order for c_make_encoder match make_iterencode
+ad58a553fbc921e76700bc9d252b6fddcc70f51a,shakefu,2013-04-20,Version bump to 3.2.0 for the hell of it.
+65914193587e9fba07d12908b28f0a974a1572b9,shakefu,2013-04-17,Implement for_json kwarg; pure Python version; add tests; update documentation.
+5291f8e0a778a4abe3f68b85a49b77f0831a4242,shakefu,2013-04-17,Initial stab at for_json hook for C extension.
+d4d6469787614d2adac90bfe85c6ada28fa7deb3,shakefu,2013-04-16,Mark as 3.2.0-dev.
+dec10d8994ca899009fee3bd3b015a3c6d0db0d6,Bob Ippolito,2013-04-06,update CHANGES for v3.1.3
+ceb0f979b1c4bd40e7940637f93ddc59b441a532,Bob Ippolito,2013-04-05,v3.1.3 - docs update to discourage subclassing
+cd05883e357f481d2eefc06a3367d18b1054e4af,Bob Ippolito,2013-03-20,tag v3.1.2
+9dc35acf9adfb1d1ce1b6adbe14fb8044596b8e1,Bob Ippolito,2013-03-19,add URL
+35a7b157868ae1ca0e19346dba4124edb8576ee6,Bob Ippolito,2013-03-19,fixes #65
+afa4fd25ca037c3ba4bb35aa99643715e1188ee0,Bob Ippolito,2013-02-22,Updated documentation to reflect separators behavior when indent is not None (#59)
+062aa98fe19c9536b6ede4c0b84f5f3e6711b768,Bob Ippolito,2013-02-21,tag v3.1.1
+c8feb3ab3113dd04aa4897a8897b78742d94124d,Bob Ippolito,2013-02-21,another setup.py workaround for Windows with missing MSVC
+6ea4ac7c6bae7e6d8605ffd50c6ab314276ef9ac,Bob Ippolito,2013-02-21,tag v3.1.0
+a7039db994cd602ed23ae8b098871cf12f966fe9,Bob Ippolito,2013-02-21,fix python 2.5 regression in tool and test_tool
+68aea11176fc7e3f376482dbddccd252836c1b85,Bob Ippolito,2013-02-21,update JSON conformance test suite (#58)
+db53d9a525ea7fec93a00fc17a1e094e821961ad,Bob Ippolito,2013-02-21,simplejson.tool tests and bugfix for Python 3.x (#60)
+104b40fcf6aa39d9ba7b240c3c528d1f85e86ef2,Bob Ippolito,2013-02-21,improve truncated input error messages, use JSONDecodeError instead of StopIteration (#61)
+44d7709a31f3a19f3d465411585ebb7be7fa2295,Bob Ippolito,2013-02-21,fix off-by-one error in the colno of JSONDecodeError when lineno == 0 (#57)
+7b96b85710439cdc7dac16a4655bf407bfad77d7,Bob Ippolito,2013-02-19,Fix a Python 2.x compiler warning for narrow unicode builds (#56)
+9b595e53a0b491bcc62c69246fe4f1c0b338d9ae,Bob Ippolito,2013-01-30,fix typo
+c3262f7394f6399aa4e5588604ec1e0d560353bc,Bob Ippolito,2013-01-11,This code is also licensed to the PSF under a Contributor Agreement.
+0cb8be97d96ef319f32666b5f5bd23ddcbb9066e,Bob Ippolito,2013-01-11,v3.0.7 now dual-licensed MIT or AFL v2.1
+9b30e089d1e346b533dea12f6dd28c5e200af057,Bob Ippolito,2013-01-11,v3.0.6, fixes ensure_ascii=False regression (#50)
+88186b0b91343fed6d22e45b940ebd7f7e58f703,Bob Ippolito,2013-01-03,bump to v3.0.5, fix deprecations in tests
+bad35638105e9adc4f802c2dd515790646bb01a8,Bob Ippolito,2013-01-02,bump to 3.0.4, update changes for #47
+3f2e15169e1ed408c92b526868d61a8514dd658b,Bob Ippolito,2013-01-01,Merge pull request #47 from cgohlke/patch-2
+bbf52de370681b8aa63e76defe476be35770183c,Christoph Gohlke,2013-01-01,Fix msvc10 compile error under Python 3.3
+1deb43541905587b1b5014e03db78fce0adb2b58,Bob Ippolito,2013-01-01,bump to 3.0.3, fix bugs
+475ed56641128bbac0c14bcab838485ce863d318,Bob Ippolito,2013-01-01,Revert "Revert "Merge pull request #46 from cgohlke/patch-1""
+88287d6617e00cc3ff0075650a42031dc85a1cff,Bob Ippolito,2013-01-01,explicitly build the extension
+4d6b86059c981d1a275c803ecc91f511980b0af0,Bob Ippolito,2013-01-01,Revert "Merge pull request #46 from cgohlke/patch-1"
+1aa8819498321dbfc601ff8a304d0c8a901f76da,Bob Ippolito,2013-01-01,Merge pull request #46 from cgohlke/patch-1
+473ab650df3943c3681f709d6aff499242efdfc6,Christoph Gohlke,2013-01-01,Fixes for Visual C compilers
+ed84084a51367a4731f80794b062f54365ac9c59,Bob Ippolito,2013-01-01,bump to 3.0.2, fix Py_EnterRecusiveCall/Py_LeaveRecursiveCall balance from 3.0.1
+03396cb26b6165814150461ec9f49343c151d862,Bob Ippolito,2013-01-01,_Py_Accu style encoder optimization, bump to 3.0.1
+02e24f4f856b065aa31d79d4726ce6668a20779e,Bob Ippolito,2012-12-30,Merge branch 'py3'
+dd76051b3f65625635d39277daf60135215c9d10,Bob Ippolito,2012-12-30,add date for v3.0.0
+2d570bafc496f236f2b4a919931023cb1be6b8b7,Bob Ippolito,2012-12-30,more coverage
+f8cdf39583e2400e5f461ab85459d4d21807a4a0,Bob Ippolito,2012-12-30,better test coverage for invalid surrogates
+5ed2285e1d88f8075d47b10f941e7581d78828ff,Bob Ippolito,2012-12-30,more coverage for skipkeys
+09d9f45b80a225808a33ca1a86e8a8ba40180b17,Bob Ippolito,2012-12-30,clean up skipkeys/stringification in C API
+16ae2381fc14d4e91fa3af5d82e01eda6929572e,Bob Ippolito,2012-12-29,more coverage, decimal key coercion
+83a493db6a8b859ec7b10fa85365dd3fdf144c68,Bob Ippolito,2012-12-29,try and use native Py3.3 unicode everywhere
+7ed40f0f1f476595f4693a74a1074e5c2446a95e,Bob Ippolito,2012-12-28,fix some style nits
+0bc9e8a586a6c2e4a85b3896a71fc04ed718cbfd,Bob Ippolito,2012-12-28,start working on improving coverage, remove unused bytes code paths from py3
+77850638e824d23e3301962b3b142fe2e0520abb,Bob Ippolito,2012-12-28,add some more classifiers for pypi
+1379f05eb4792eabfcbf552e5b6f4b39b9da4f9c,Bob Ippolito,2012-12-28,fix python 2.5 test regression
+5846148410234f6466aefcddc68683811577998e,Bob Ippolito,2012-12-26,First pass at Python 3.3 compatibility First pass at Python 3.3 compatibility, bump to 3.0.0
+57d980277f8d1d6324904edd43e1a730572b64b6,Bob Ippolito,2012-09-21,export JSONEncoderForHTML (#41), bump to v2.6.2
+6f5ca6ba4d2f71958176756eac2ac7fe6ec62537,Bob Ippolito,2012-07-27,bump version to 2.6.1 and add test/docs for #38 raw_decode fix
+5178cb760e35a8a921fd509f7d5da383d122d54e,Bob Ippolito,2012-07-27,Merge pull request #38 from japeq/master
+0fb0aeabc0af49bb127deb11ecddf66fa7a3d58c,Janne Kulmala,2012-07-19,raw_decode(): Skip whitespace before the object
+f55e882aafa73732d63129cf1280c093acc916db,Janne Kulmala,2012-07-19,raw_decode(): Document 'idx' parameter
+16b63cdb118138f8639b6f005d92f2136c815a1e,Bob Ippolito,2012-06-26,Error messages changed to match proposal for Python 3.3.1
+e1919939c141bb55c18c67cf576bdb3c2fc0ab18,Bob Ippolito,2012-05-10,Fix for regression introduced in 2.5.1
+607a4898322da4ff51f992690118ee6e5fa1be1d,Bob Ippolito,2012-05-10,Support for use_decimal=True in sub-interpreters
+293718a42e13bcfaae9c86bc9160c7515a6c199f,Bob Ippolito,2012-03-29,Merge branch 'item_sort_key'
+58396cef4501a2b619ade30b5057cb2013c1151f,Bob Ippolito,2012-03-29,fix typo
+a19eb434a6733cf97dd5e4dd4721416743b840aa,Bob Ippolito,2012-03-29,bump version to 2.5.0, add docs for item_sort_key
+fb26048e3983c098c8fa2d21009a6695cb128b5a,Bob Ippolito,2012-03-29,Merge remote-tracking branch 'scottkmaxwell/master' into item_sort_key
+60dac25f8cde7bb86cddfa6f7dfadc6a5fcc7799,Scott Maxwell,2012-03-20,Added item_sort_key
+8ae6d4befa25ae929ad71a68a523471da5d09b06,Bob Ippolito,2012-03-06,oops, fix release date
+cee27e64e5bc5fb923589139079d086265d2593e,Bob Ippolito,2012-03-06,Merge branch 'bigint_as_string-gh31'
+ed1c14ad163595159a9df8a100b2cfa152180f8c,Bob Ippolito,2012-03-06,Merge remote-tracking branch 'scottkmaxwell/master' into bigint_as_string-gh31
+907d674e20214b77760878f3b7dc270f167b8d9f,Scott Maxwell,2012-03-06,Change 1 to 1LL to fix warnings
+1544fcc00249096849ee803bd9c1ad021c972ea3,Bob Ippolito,2012-03-06,version and changelog bump
+4460550c22e5cd4f52fb1f0449c4b1c02ff38fd1,Bob Ippolito,2012-03-06,fix edge cases and pre-2.7 compatibility
+50d234a560e609600f839427d3547868c166695d,Bob Ippolito,2012-03-06,Merge remote-tracking branch 'scottkmaxwell/master' into bigint_as_string-gh31
+89d774e3a8039d454dc81cfd128cb803b4ad48fa,Scott Maxwell,2012-03-02,Integrated unit test into test suite
+bdd25021bd1958003ed96026eed66f161bb9fc70,Scott Maxwell,2012-03-02,Finalized bigint_as_string feature
+3b1b1aec3cf5175c6218a376e01049963f8f973c,Scott Maxwell,2012-03-01,Changed limits from 2^54 to 2^53
+08ef2e3e6e7da0fe9a5d2c73bbcc947489808579,Scott Maxwell,2012-03-01,Added javascript_safe_ints support
+9069fbfe3d856e4b66b42c9a354423812e5a593b,Bob Ippolito,2012-02-27,bump to 2.3.3 and clean up indent code
+51744f7fa9aed5b29eabfd5598a9272c76d4879d,Bob Ippolito,2012-02-27,Merge pull request #29 from kini/indent-eafp
+7eac6360ba65050769aae8881a00c6b84eecb5c3,Keshav Kini,2012-02-28,Documentation and a test for the previous commit
+9b69bb2834e41005c2e7fc8ad7ce3a0d8fecdbd9,Bob Ippolito,2012-02-27,attempt to support travis
+627af992fd4d7ba9d106461cc478eb14660e7ca5,Keshav Kini,2012-02-25,Allow unknown numerical types for indent parameter
+f9f73115e42bcda4526cc89f145c873c7be2bef6,Bob Ippolito,2011-12-30,fix 2.3.1 regression and bump version to 2.3.2
+d131445ddae87b810a2b186cb7b57c8fddb0444e,Bob Ippolito,2011-12-29,bump version in setup.py
+a21373a6dbd9f943aa75996b49b0988d4f8e1f3c,Bob Ippolito,2011-12-29,Merge branch 'dict-subclass-gh26'
+4221f71f9bb6fc1488c70eec5a22fc96b2121e1a,Bob Ippolito,2011-12-29,callable check for _asdict with namedtuple_as_object
+7e0d1aaad867d37f12d9cd939e01a3ffff2dbacb,Bob Ippolito,2011-12-29,fix whitespace
+8e96135943aab24f1f009f257711073e5edcd1f5,Bob Ippolito,2011-12-05,Merge branch 'namedtuple_duck-gh22'
+0f17131614f6af0d4e9bbf065aa5c42cf1a25508,Bob Ippolito,2011-12-05,Change release date for 2.3.0
+b389ecc62d08cb5102e4f9a820314fc7cf8e7503,Bob Ippolito,2011-11-18,test with DucKValue and DuckPoint which are not tuple subclasses
+205ec293aa75538599c47692c18c048b80ed0d3e,Bob Ippolito,2011-11-18,bump version to 2.3.0
+6aeb8f5963b9e683c6473766fef66875f6fcf40e,Bob Ippolito,2011-11-18,update docs
+793232196f4d341863b791e356e7d95504f82d28,Bob Ippolito,2011-11-18,Merge remote-tracking branch 'singingwolfboy/master' into namedtuple_duck-gh22
+edfa7651617a5f01d3394e3fc8d8e42aa972c3ff,David Baumgold,2011-11-10,Removed PyTuple_Check from _is_namedtuple() in _speedups.c
+698e6c1e3fc00a41ef8a09f2a5c8b287034e6390,David Baumgold,2011-11-10,Removed isinstance() check for namedtuple_as_object
+52d00503192973f36e629c8869652df1b65eb8be,Bob Ippolito,2011-09-06,fix https://github.com/simplejson/simplejson/issues/16 - include MANIFEST.in in MANIFEST.in. distutils is dumb.
+49724ee06f038d27ab3d4adbe4ed403692799aa1,Bob Ippolito,2011-09-04,2.3.0 and iterable_as_array encoding option
+ba669afbfcc2306033bb38b900f9a22d217cb233,Bob Ippolito,2011-09-04,I knew I missed something. Fix the date in CHANGES.txt
+b89df4caab3add95fa8e301fe3ec0f2bef9590ef,Bob Ippolito,2011-09-04,Merge branch 'pure-distutils'
+8a43bebf128dd3313cd6ce41f999020b1806beff,Bob Ippolito,2011-09-04,fix tests for py2.5
+d6f4c1baea2e93fa61ba9367f396ab15422bc725,Bob Ippolito,2011-09-04,remove setuptools
+a070b3f71b38bbb9c307fc9a4965f782199e0fb4,Bob Ippolito,2011-09-04,setup.cfg is unused
+ca4cf02b01a943d43ce300e584fbd3f3f75b5b41,Bob Ippolito,2011-09-04,Merge branch 'namedtuple-object-gh6'
+5cc3960c70494c1651f4e0e18d5549d18f3f67e0,Bob Ippolito,2011-09-04,2.2.0 - namedtuple_as_object and tuple_as_array options, use_decimal now True on encoding
+50631cf809830d4c398cee58159643913cd89411,Bob Ippolito,2011-09-03,update docs with namedtuple encoding to JSON object
+308b7421566889b10766cdab144874e29b38ff99,Bob Ippolito,2011-09-03,Merge branch 'scan-ValueError-gh15'
+fb1a518e536e6bce349cd776a90a03895fa7f61b,Bob Ippolito,2011-09-03,also test unicode and fix the JSONDecodeError issue
+2d765188301e68e47f20e90b81de1476213209f4,Bob Ippolito,2011-09-03,ignore coverage files
+1fa631f71c97d8d4fca9e4482f09121d5e436720,Bob Ippolito,2011-09-03,test case for https://github.com/simplejson/simplejson/issues/15
+63786a180ecff31398055c456e3aa543ff79c9af,Bob Ippolito,2011-06-22,document JSONDecodeError https://github.com/simplejson/simplejson/issues/12
+4989e693bab39b1ce5cf6fc0b21dbacd108c312c,Bob Ippolito,2011-05-15,Force unicode linebreak characters to be escaped (U+2028 and U+2029)
+e27ec198ec6d28bd0d211939122523a781414318,Bob Ippolito,2011-05-08,Move docs to http://simplejson.readthedocs.org/ and update version to 2.1.7
+ef460026417ab8cd9d8fae615d4e9b9cc784ccf1,Bob Ippolito,2011-05-08,update docs
+455f55c7686336ac8ac73816533dcdda7226d74e,Bob Ippolito,2011-05-08,add a release date
+bb15df06b8ec76ce50340d4ad95f9bcd776671a9,Bob Ippolito,2011-05-08,Merge branch 'recursion_control-11'
+babc0c05221ecb550cfee80e9d2daec508b1fcd8,Bob Ippolito,2011-05-07,encoder_listencode_obj recursion check
+e226e3c66984800e9bc6533c31e81b0c553e1f48,Bob Ippolito,2011-05-07,encoder_listencode_obj recursion check
+dc58b92571947568e67bb3e30ab6c891009e4c8b,Bob Ippolito,2011-05-07,scan_once_unicode recursion check
+0c854c67b919ea768fa8aba0a5fa2e7e5449455b,Bob Ippolito,2011-05-07,scan_once_str recursion check
+eff8dd214e522d4eb6f56c8868ba92eb631dc914,Bob Ippolito,2011-04-19,bump versions to 2.1.6
+f99c5f56e119f89b69867a569af38faa7435e30c,Bob Ippolito,2011-04-19,https://github.com/simplejson/simplejson/issues/5
+729d79e8581bed4188edab4d4910d858e2f0b214,Bob Ippolito,2011-04-17,update docs
+c97170d3f9801def97352333417666dedb684dc1,Bob Ippolito,2011-04-17,update docs version
+4ca8efd1e78135f01ab921c6f8319133cb0f0c00,Bob Ippolito,2011-04-17,change version number to 2.1.5
+9edd8ff0a9ff197035085332deaa1e00eed93cfc,Bob Ippolito,2011-04-17,update docs
+7bd3ca1e86ad228a683fb011fe88f3a9edac232a,Bob Ippolito,2011-04-17,add release date
+b84a573407e8acb05cb3a973da65c4ae28bd3daa,Bob Ippolito,2011-04-12,do not try to build extension under PyPy
+5cad556f7d60a84eda51adca054c51a192c98c09,Bob Ippolito,2011-04-12,Trailing whitespace after commas no longer emitted when indent is used
+1a371353a0fdf324f4b98c9f3e13439724066655,Bob Ippolito,2011-02-06,update submodule
+0d087a49106e94358eebf7fd028b5a55d8f6afb9,Bob Ippolito,2011-02-06,links
+87a8e18b9e454d91ff39c33bcf7fd79f0ec8b671,Bob Ippolito,2011-02-06,update docs as submodule
+2499940555e8ac939f25fe0b53fc85ea5de61315,Bob Ippolito,2011-02-06,remove docs from ignore so it can be made a submodule
+c3ec0ef0842cf279cdc39e9fb9f353db63017d96,Bob Ippolito,2011-02-06,remove docs from master
+131842a8af5a513d8020e70f8f7c571502c3f778,Bob Ippolito,2011-02-06,move long_description to README.rst
+1eb3c0df7eb59d62e6236abb237d1d6581317ace,Bob Ippolito,2011-02-06,remove .hgignore
+df1b6a564bd3a9fd56a1be2f9deecb83f674c296,Bob Ippolito,2011-02-06,change url to github
+68191af88209d60b5bd8887b83a1c58244339fb8,Bob Ippolito,2011-02-06,bump version to v2.1.4
+0887c12d4ef3d3958ddef2fe42343d319da2a3f9,Bob Ippolito,2011-02-06,.gitignore
+87da37553cb14c06656e62d6bdc29128d7c5ca96,Bob Ippolito,2011-01-17,http://code.google.com/p/simplejson/issues/detail?id=87
+db980b6827239e264cf9626e2c4a7947d4f746f2,Bob Ippolito,2010-11-05,http://code.google.com/p/simplejson/issues/detail?id=86
+887d575bef8aea50d81d51c7c9c9eb9d1b98403e,Bob Ippolito,2010-11-05,change version number to 2.1.3
+572b447fd0337271593156b112607dd6ded9932b,Bob Ippolito,2010-11-01,prepare for 2.1.2 release
+81804e672f22c236dda9412221674b762bb13ec4,Bob Ippolito,2010-11-01,re http://code.google.com/p/simplejson/issues/detail?id=85
+ff9cb965faa144b3f221fad0e7f6f09cc91ac30d,Bob Ippolito,2010-10-08,pyflakes fixes
+ae8a27de9e8daef44d1542ec6425d19119b3ba17,Bob Ippolito,2010-10-08,http://bugs.python.org/issue10019
+5075072f866a4ef098cc9ce4dd7f879fc040edcd,Bob Ippolito,2010-07-19,http://code.google.com/p/simplejson/issues/detail?id=82
+c90a0623978ac5eb6c10b5d49f4c05774c245092,Bob Ippolito,2010-07-12,http://code.google.com/p/simplejson/issues/detail?id=81
+bfa06f188d9451a77c6e1ba2a9d72fd42a557ab1,Bob Ippolito,2010-03-31,http://code.google.com/p/simplejson/issues/detail?id=75
+b18194959fc76618cec3ea28814b73b7fab58ea0,Bob Ippolito,2010-03-16,hopefully fix compilation on windows http://code.google.com/p/simplejson/issues/detail?id=74
+4fa79de1310f097b55905f5c643031f2db264cdd,Bob Ippolito,2010-03-16,hopefully fix compilation on windows http://code.google.com/p/simplejson/issues/detail?id=74
+65784ffb81125bb8980f8cca54fcb892c24a46f7,Bob Ippolito,2010-03-13,typo
+1a52912dbbef647eb2b07b32901bb8667cb75e23,Bob Ippolito,2010-03-11,http://code.google.com/p/simplejson/issues/detail?id=73
+87f444360164b3691cc1459486fa591b0d19ad42,Bob Ippolito,2010-03-11,fix version to 2.1.0
+c53110ca9ed727a5d15574a81dded545f646901b,Bob Ippolito,2010-03-11,update docs
+df165d9e0ac1409f18ca5773f368f58b2064213f,Bob Ippolito,2010-03-11,update date in CHANGES.txt
+a038a57fadf39979d328e7eeb71da9c42284d391,Bob Ippolito,2010-03-11,maintain Python 2.5 compatibility
+32b8a4d5cdb74466671df6006fa492004e6da408,Bob Ippolito,2010-03-08,http://code.google.com/p/simplejson/issues/detail?id=34
+98f42b54dd17096215995f0848ab5c26c81c805d,Bob Ippolito,2010-02-25,doc fix
+2253882e3415df74b0d944e2478ff9c121c2c3a6,Bob Ippolito,2009-12-27,version bump to rc2
+be27d6a3df096b90668a9d3c7c0370ee27fb6ab3,Bob Ippolito,2009-12-27,fix Py_ssize_t converter
+1d834705e21003683dd18a914f90f294b9196947,Bob Ippolito,2009-12-27,incorrect decref
+d349c244596ccdfa2664e0cdb19fe722cd7bbff5,Bob Ippolito,2009-12-27,build with newer sphinx
+6017358b33a0592f35082a639b94e53ebdafd0a7,Bob Ippolito,2009-12-27,tag as 2.1.0rc1
+a73172930ad3b22927d816dc14675eaae72e0501,Bob Ippolito,2009-12-27,officially drop py2.4 support, doc tweaks, use only py2.5+ C API
+b5dc76b12bdb1dd53f572be6379243c5b7ef47bb,Bob Ippolito,2009-12-27,tweak svn:ignore
+bc73ddee065b44769068e00b7f057aca650c5c23,Bob Ippolito,2009-12-27,http://bugs.python.org/issue7451
+bdc1425fcdc600562dc14818cad9627f01d9dd03,Bob Ippolito,2009-12-27,http://code.google.com/p/simplejson/issues/detail?id=70
+19d25b4b7b91298c3163f15025c3f982ac43f829,Bob Ippolito,2009-12-27,missed test case
+eb74e8f8e9d96b6cd9bca7d533f4460b78de98df,Bob Ippolito,2009-12-27,http://code.google.com/p/simplejson/issues/detail?id=69
+bbd8054480f46e92281d1f436e59fe4b52439561,Bob Ippolito,2009-12-27,http://code.google.com/p/simplejson/issues/detail?id=66
+c5042a153f03c3de52d47dc9286dfe9ea4ec7360,Bob Ippolito,2009-12-27,encoding memoization
+6cccfee9f5afcaeac7e172d7d2e27a72dd47964b,Bob Ippolito,2009-12-27,use PyIter API instead of PySequence_Fast to avoid potential threading issues
+3ae0124c40fcbfbef242ad02b5edd64bbc5a19e9,Bob Ippolito,2009-12-27,Use PyOS_string_to_double when available
+565f6ebe756661c469f2a4be1065e10f7ab08868,Bob Ippolito,2009-12-27,update CHANGES
+9a4048948610d9e310da88156e92ec226b3c30c1,Bob Ippolito,2009-12-27,use iteritems instead of PyDict_Next (at the expense of some speed) http://bugs.python.org/issue6105
+a6997d204b61532b9d80941ab1dfc3484f689ef3,Bob Ippolito,2009-12-08,http://code.google.com/p/simplejson/issues/detail?id=58
+3fa08df611d18aec6a9258bf56eadac416702ba4,Bob Ippolito,2009-06-02,http://code.google.com/p/simplejson/issues/detail?id=57
+363e241c5cb07acff3cde70a4d5fd30ff7341282,Bob Ippolito,2009-05-17,regenerate docs
+f115a9856a7e58bd82dd2d09175e2de17516c1d7,Bob Ippolito,2009-05-17,http://code.google.com/p/simplejson/issues/detail?id=56 indent changed to string
+1d34eb9fd594ba65d63ea63c27a2abb7faa57cf6,Bob Ippolito,2009-05-17,update CHANGES.txt
+cb67e3060247998b474ca9a7071841f1b1aa5a6e,Bob Ippolito,2009-05-17,punting on nosetests support, python setup.py test works as does python -msimplejson.tests http://code.google.com/p/simplejson/issues/detail?id=55
+e5a6daaf4bffcaf7cc0644455923c579805f4e7f,Bob Ippolito,2009-05-17,seems to fix #54
+81d567647a3030326a27b6083dc83edc1edf3c18,Bob Ippolito,2009-05-17,re #53 python 2.4 does not have all()
+f849ce5d657f2a72b9af8b37ea67dd8d5cebcf6c,Bob Ippolito,2009-05-17,oops
+0c067d195decc908ce2c3076f3c92f8fa3f19d03,Bob Ippolito,2009-05-17,require setuptools 0.6c9, remove old cygwin hack
+7f6c62499a21139ff486f44787f6850ac6ce6f02,Bob Ippolito,2009-05-17,apply suggested fix for Python 2.4 compatibility http://code.google.com/p/simplejson/issues/detail?id=53
+e80ea4a9dcd022ef6d43879ed295230e268967f6,Bob Ippolito,2009-05-17,first pass at http://code.google.com/p/simplejson/issues/detail?id=55 -- requires manual run of python -msimplejson.tests, does not integrate with nosetests or setup.py test yet
+0684eb9a31ba739b3b505be205399046a8eb3715,Bob Ippolito,2009-04-14,fixed http://code.google.com/p/simplejson/issues/detail?id=48
+4989183b05ce1d83a5c9c79b97ad1342eff838e7,Bob Ippolito,2009-04-05,Add a CHANGES.txt file
+a6c01e9b3ddd7c74ef45995e3a37e0cd628a7a34,Bob Ippolito,2009-04-03,http://code.google.com/p/simplejson/issues/detail?id=46 Parsing an array with trailing comma with speedups causes an unhelpful error message
+b10382a99baa5f03602537da5bcc324c37fc2fca,Bob Ippolito,2009-04-03,http://code.google.com/p/simplejson/issues/detail?id=45 Refactor decoder errors to raise JSONDecodeError instead of ValueError
+19b68d178e11d0417672e5167fca8eb673b6ff8a,Bob Ippolito,2009-03-29,minor tweak to test to make it easier to port to python 2.7
+85cf0f5ce6e3408ab245e540d5a474b0be88148c,Bob Ippolito,2009-03-29,fix version in docs
+2e0050046dc4c35508758669ec02b5f8c8b091cf,Bob Ippolito,2009-03-29,http://bugs.python.org/issue5381 ordered_pairs_hook backport to simplejson
+0d9f46d682a4af5fff44c1d3b01fe2ff00599ec3,Bob Ippolito,2009-03-28,tests and fix for containerless unicode float decoding http://code.google.com/p/simplejson/issues/detail?id=43
+b943b2bb7fcecfefda78a24374b747d8590c8666,Bob Ippolito,2009-03-28,version bump
+85e1e6878525c63441d120c39a198f33cc392816,Bob Ippolito,2009-02-28,comment about weird struct usage per http://codereview.appspot.com/20095/diff/1/13#newcode21
+76439d79b15bd77ca96116721b20bc7631c501f1,Bob Ippolito,2009-02-28,Use PosInf from decoder http://codereview.appspot.com/20095/diff/1/12#newcode31
+fbcdcec4059c87693cb662c8766324ec4e9727c8,Bob Ippolito,2009-02-22,fix long lines, make py2.6+ porting a bit easier
+173ebd91f223afef30aebbc3da58fdafc935c3cc,Bob Ippolito,2009-02-18,build docs
+be3f7b3b1e4dcc75f7ba7502fe785c8d2c665a55,Bob Ippolito,2009-02-18,re http://code.google.com/p/simplejson/issues/detail?id=41 http://bugs.python.org/issue4136 add cyclic GC support for Encoder and Scanner
+5c7cf8a73ee9d5e51fcd0e7c16a512f9781a690f,Bob Ippolito,2009-02-16,replace a few string formats with string addition to make py26+ porting easier
+cf3c2982660b9b654c9cb8347bdbab67c2e1ca7a,Bob Ippolito,2009-02-16,replace a few string formats with string addition to make py26+ porting easier
+f909e2fb180a63dccb8311b28ec8ea5db34c9466,Bob Ippolito,2009-02-16,whitespace
+3f349017d97fb9143fa55393d15540c547fe9411,Bob Ippolito,2009-02-16,verison number bump, change tests around to make it easier to backport to python stdlib
+edb409fab04d0a5ff18eeb8f0225c5bd79fc5a25,Bob Ippolito,2009-02-16,fixed http://code.google.com/p/simplejson/issues/detail?id=35 -- no longer checks exactly for True and False
+e36815997181e2d74c2180fb7fe7bb142631bae8,Bob Ippolito,2009-01-05,update docs
+823f4a283da154d0ea83d1537a3914762fbe0c76,Bob Ippolito,2009-01-05,changes relevant to http://codereview.appspot.com/7311 -- mostly documentation improvements and a small error handling fix
+b919f3cbb861f3319a0af080e69652c839abf064,Bob Ippolito,2009-01-03,ensure unicode result if the input is a unicode string
+fb46282d18b65dcfa924d9c637351c0720bdacfc,Bob Ippolito,2009-01-03,yay whitespace and doctest
+e1fee64efcae3f5601a567b8483715dadff76100,Bob Ippolito,2008-12-30,add documentation for strict
+aa95b2226ed8566a643378f0995ee626b8200368,Bob Ippolito,2008-12-30,version bump, fixes to docs re http://bugs.python.org/issue4783
+ab589fa80b65895376cfb942ef786eb6b036f14a,Bob Ippolito,2008-12-19,apply 26_win32_setup.diff from pjenvey
+38181bfb261c06e69aecff5153ddbbe37f4953ea,Bob Ippolito,2008-11-25,version bump, remove python 2.3 compatibility claim
+0135b054bfac8e2a5826dbe23767daf3f5ea74c9,Bob Ippolito,2008-11-17,add test coverage for check_circular and fix a Py_DECREF(NULL) but when check_circular=False
+45f98d825c49d7a1eba6f23dc51895fdb1bfb8e1,Bob Ippolito,2008-11-07,update docs
+49b75b5f647f84f7ea1860117ef2dfc955218ad0,Bob Ippolito,2008-11-07,typo in conf.py
+be8ae2ce64b8a646bf973d87ddf37269e35cc85f,Bob Ippolito,2008-10-24,http://code.google.com/p/simplejson/issues/detail?id=27
+79857d950b49a74472b8d2673095b47a1ed3bead,Bob Ippolito,2008-10-17,bump version, use python stdlib whitespace and docstring conventions
+3f44ece01ffc30c0a7b6b21ed7bd0cc93fb219aa,Bob Ippolito,2008-10-11,fix several reference leaks, doh :(
+5cb8744b276ddf44eef956a508a957f02abc79d2,Bob Ippolito,2008-10-11,make a test resilient to py2.6 changes in formatting
+9976f4558317f1d9b1ec486556c08ecabd1262a7,Bob Ippolito,2008-10-11,decoder optimization: pass around a next index pointer instead of using temporary tuples
+34c500828f64054b6a74de1cbb3bcad4e5bc10c1,Bob Ippolito,2008-10-11,use PyTuple_New and PyTuple_SET_ITEM to skip some refcounting games, although we should probably skip creating these tuples all together
+2d906dc32497b521edbfadfa29b4808f5dbb7bc8,Bob Ippolito,2008-10-10,http://code.google.com/p/simplejson/issues/detail?id=26
+9b01a58529adc4c7571bb60640579544de3d70dd,Bob Ippolito,2008-10-07,use Py_CLEAR, fix some unlikely DECREF in PyList_Append calls
+3caeeebf7b61c819062af95b87b5853132661b47,Bob Ippolito,2008-10-04,Py_IS_FINITE for Python 2.4
+11b05d5820d11ba1507dba9d46fd4bfa85799a93,Bob Ippolito,2008-10-03,version bump
+2b526c0ad3f451d5346afd111ba201db6443c100,Matthew Dempsky,2008-10-03,#24: MSVC2003 would be better titled MSVC1970; based on patch from atsuoishimoto; changes tested on OS X
+f2cd4e5ce5428b1469b29d9c3dc76a75530273a3,Bob Ippolito,2008-09-29,fix long() encoding
+86137c849d5e8f5e11fbe4ca180835bdc592f894,Bob Ippolito,2008-09-29,failing test for long, thanks @djco
+8b89415b7a25745b3b953fcdfc9ad0591f99005c,Matthew Dempsky,2008-09-28,commit patch for mingw support; regression tests checked with Python 2.5 on OS X and Linux and Python 2.4 on Linux
+43c3bfa977e6b73f832d02b4ae9fc0c4123fdbd1,Bob Ippolito,2008-09-27,version bump
+0ae39e488c125942cb4c5828c10ab938f2f3c001,Bob Ippolito,2008-09-27,run docs in test suite
+e5395f373db51f0283cdc4895b0e9f1ad96186eb,Bob Ippolito,2008-09-27,set a lot of mime types
+41cb5114519b8ed175bca56af2e9e673f570ad88,Bob Ippolito,2008-09-27,switch to sphinx for docs
+0acf8b44f644756d6b874887b251d810f4f500dd,Bob Ippolito,2008-09-26,use C path for float encoding
+3dc751e419837066941a7c116c05818d839ee13f,Bob Ippolito,2008-09-26,use tp_call instead of methods
+c509ef1de419095cc5f11f6eb2093e3a52af063d,Bob Ippolito,2008-09-26,remove non-working old benchmark scripts
+8f92b0c06fcc4f127f2a7001e7c5f21e36ca3673,Bob Ippolito,2008-09-26,make static
+b05d6f11c5473c8674f170ca2ebe1c42f464f361,Bob Ippolito,2008-09-26,style cleanup and http://bugs.python.org/issue3623
+516cb02410e0bf2d539e52a9d8a3db34cc934b68,Bob Ippolito,2008-09-26,C fast path for encoding
+f9118892a3f51d673a97bf94f1d33fd75d17dffd,Bob Ippolito,2008-09-26,cut out a few yields in exchange for string ops
+2afcca8635bb0adce45bcff7c069f320c82eb9f8,Bob Ippolito,2008-09-26,god bless closures.
+732ae3d7cc4f4be8964be446d1463faf0967b262,Bob Ippolito,2008-09-26,first pass at making a horrible optimized mess out of the encoding bits of simplejson
+2ceb176be6e01957b65b2946a4ff2b14f53663e9,Bob Ippolito,2008-09-25,optimize for ASCII string encoding (not a big difference for our strings though)
+81565011634a06cd8af532a36e314625752199b5,Matthew Dempsky,2008-09-25,fix another sign-extension bug
+427666d3b4398bd27b838b4ccfd956a26111546e,Matthew Dempsky,2008-09-25,prevent sign-extension on non-ASCII characters
+6c824374dea319016c5b8f74fda2bdc1c8968455,Bob Ippolito,2008-09-25,test for http://code.google.com/p/simplejson/issues/detail?id=22
+313f24f011065759b72d7484162e16d96452b21e,Matthew Dempsky,2008-09-25,stricter surrogate pair decoding when Py_UNICODE_WIDE
+b491b960a4780755f4f0a0b99347a1fdcaf7fc43,Matthew Dempsky,2008-09-25,branchless unicode escaping
+5b15243edbfc79c724d15229fb79e45cc4a433d4,Matthew Dempsky,2008-09-25,eliminate variable distance bitwise shifts
+52bbdee8127eb93487f3dc7b4e294b8ffbda4ae1,Matthew Dempsky,2008-09-25,fix format strings
+6f602938e931e18e33dd7ee4600a60640154cb56,Bob Ippolito,2008-09-25,gratuitous comments, some additional type checking
+03714d72a55e6b97fe988d1d5f0384e25c415871,Bob Ippolito,2008-09-25,clean up C code, change API to be str preserving for ASCII only strings, bump version to 2.0.0 since this is an "interface" change
+83c3d75cdbcbf02254cf420f8555ed7421935576,Bob Ippolito,2008-09-24,more C code in the decoder, speed++
+db96a5d473e705c6ec5fe80054d50ba2233ba451,Bob Ippolito,2008-09-24,fix the ref leak :)
+eea5ce424cfda0e7ffcc95f2bd1a86d26bc82dfc,Bob Ippolito,2008-09-24,more decoding perf enhancements, this time with lots of C code (TODO: check for ref leaks)
+6896523285b550fe6a1f0293ad36dcc396514c68,Bob Ippolito,2008-09-24,even more decoder optimizations
+a8165ef80b2390951619bb199e6defe9b6cafd9a,Bob Ippolito,2008-09-24,even more decoder optimizations
+00a0d85515743777d62cac6b5b3570f25511fedd,Bob Ippolito,2008-09-23,bump version
+be03773330b50ddc530e7e868ee782fe16ad0a3a,Bob Ippolito,2008-09-23,ugly hacks to decoder to avoid dispatch for roughly 2x speedup
+184770f2941b7a6700142f05a75b3d56e95bfe1d,Bob Ippolito,2008-09-13,bump version, merge some changes from Python trunk _json
+7f219a88ba4a73e3ea163cd43a980be515b53001,Bob Ippolito,2008-08-20,http://code.google.com/p/simplejson/issues/detail?id=16
+b449b6e199e51936b350f84d40448083c21321eb,Bob Ippolito,2008-07-03,fix setup.py to build without a compiler
+74d9c5c4c4339db47dfa86bf37858cae80ed3776,Bob Ippolito,2008-05-09,use -msimplejson.tool instead of -msimplejson to match python 2.6 json library
+4b61844e8f78d7e969ea433ceaab8b679ac436f8,Bob Ippolito,2008-05-04,backport fixes from py2.6 issue2750 branch
+5b90128b53c242d7885365b0e98309171bf79ba2,Bob Ippolito,2008-05-04,bump version, fix two ref leaks
+3935999d8c0b434e20e8052053538da666ce81cd,Bob Ippolito,2008-05-03,tabs to spaces
+99ce437375ee2504d44970277f82dbbce9351d9d,Bob Ippolito,2008-05-03,re-generate documentation
+61c662d0334e843912a41c6010f250d6ecbb3342,Bob Ippolito,2008-05-03,PEP 7, PEP 8 cleanups
+facd43cc3c6aa62913c5e7b40f2c79b0ea5bfab6,Bob Ippolito,2008-05-03,http://code.google.com/p/simplejson/issues/detail?id=10
+37594d7c05c0ceb30e3894950e33236aa07ebf73,Bob Ippolito,2008-05-03,convert test suite to unittest, remove jsonfilter, bump version to 0.9
+f750b9beae59bcc8b69fece978202f118c01535e,Bob Ippolito,2008-04-16,doctest fix
+c89ad3c485a7fde56bc3c17bd3eee8b898c0a2f5,Bob Ippolito,2008-04-05,win32 fix from http://code.google.com/p/simplejson/issues/detail?id=8
+8b57d87e276c6031457873847d96542294a34cfe,Bob Ippolito,2008-03-25,bump version, resolve http://code.google.com/p/simplejson/issues/detail?id=3
+5d360053b7b6483978a82852dd7032bc30deaf97,Bob Ippolito,2008-03-23,update docs
+d7879c9c97547d4d8ca9e9072bbd8d33bd315c6c,Bob Ippolito,2008-03-23,decoder speed enhancements
+2f1e6e426465e68ca3fd30c596cc98c30f7ff076,Bob Ippolito,2008-03-23,update docs
+42a7e48d912e3b21a52c0c5ead3fe549c02239c8,Bob Ippolito,2008-03-23,make tests pass on UCS2 platforms
+680f4ce7eff5c8fce8f5c61858d45df9dd48b19e,Bob Ippolito,2008-03-23,test boundaries
+609133a6f03397e5e6fe8e688438e548379bf2af,Bob Ippolito,2008-03-23,surrogate pair decoding
+95dd20b6b733197d8a0443af9fc277d7a31eb335,Bob Ippolito,2008-03-23,failing big unicode test
+16fa400f522f63098842728fffc2439456b7f117,Bob Ippolito,2008-03-23,nicer cli, rebuild docs
+d11b931e488c419d0fc3fbbb2a583bb0890dcce0,Bob Ippolito,2008-03-23,nicer command-line UI
+5498fa8abac362faba41ac86bbccbfb284a246ec,Bob Ippolito,2008-03-23,more tests, python -msimplejson pretty printer
+f3d503d201501aa2fe7c0914ce6a3978023d6223,Bob Ippolito,2008-03-23,parse_float, parse_int, parse_constant hooks
+ddaa1c328be014f4ab3d1e9e7dc3b2484a0fd2d7,Bob Ippolito,2008-03-23,bump version to 1.8, remove </script> attack prevention (escaping of /), revert to accurate numbers and an appropriate test
+12a5916de434c7c29ea82103e2c38cb7ad269958,Bob Ippolito,2008-03-23,fix regex for http://deron.meranda.us/python/comparing_json_modules/strings
+e085d6eeabd0fd288000d56373ffb645a91fd8ef,Bob Ippolito,2008-03-23,switch back to repr for accuracy
+59ac2588ac3de835b4789f8975dd346617a5f977,Bob Ippolito,2008-03-16,update version to 1.7.5
+cc29bd11e9f3da5777efdeb49a464be08e5b8806,Bob Ippolito,2008-03-16,use str(float) instead of repr(float)
+1e584b00ba4cf8c6737026cbb5b9ed278d228eee,Bob Ippolito,2008-03-07,strict regex correctness, patch from guido
+19e33c1c118f23c16265af410ea2b50877ac4524,Bob Ippolito,2008-02-23,better handling for the lack of a compiler
+1a7035f18fdb435a0d645f8a202d8b1ecf9c1bef,Bob Ippolito,2007-10-22,fix windows build
+fc29185b6b19796284ed0ce7f7f7451ba197aef4,Bob Ippolito,2007-10-16,use_setuptools TypeError catch
+abb22a946f6710a64e1f4d517e3601a9df701224,Bob Ippolito,2007-10-16,1.7.3
+05827e58d11b2da3f8c7a7f42f4092b7fdd93a77,Bob Ippolito,2007-10-02,bump version, use ez_setup that doesn't always download new setuptools
+4eb5b00743d235c709d218c5d876c1bf1697351b,Bob Ippolito,2007-03-28,fix dump()
+9ec6701b19648f9e5c570d7be213f2c844a2400f,Bob Ippolito,2007-03-24,tweak build_ext to not fail
+dd8279f6faa3a3bb21944d245417cb6dbe00dd90,Bob Ippolito,2007-03-18,commit 1.7
+5e7eef082fa5b99ec7205daa0c8eb6c845ddeb72,Bob Ippolito,2007-03-18,correctly calculate max size for wide build
+7c19b98b7c2c2b589e12c61316124463510ba3ee,Bob Ippolito,2007-03-18,small decoder optimization
+a0fac116e1e5fd038174312c5b52d15a163fcbc8,Bob Ippolito,2007-03-18,optional C speedups
+be103d0368413157c2ac4df0c8b67e97f735bc34,Bob Ippolito,2007-03-04,update doc versions
+af4ac5de0e35b8dad38bc9055529463cddff0fde,Bob Ippolito,2007-03-04,update version to 1.6
+c8ef072961c6df696b030505c1cabf23f093cada,Bob Ippolito,2007-03-02,add str encoding support to dump/dumps
+0f940b38d1e26e106e87907f1179f47f01a98936,Bob Ippolito,2007-01-18,simplejson 1.5
+86644eafb0175f7ef52f2f1cb0801979b30d32e0,Bob Ippolito,2007-01-18,update docs
+c4d8230e19cabd7e582f8d3189208dfade7ea0c1,Bob Ippolito,2007-01-18,expose separators
+08cbfbd5bab16f4802a64b23d08f036a51319bdc,Bob Ippolito,2007-01-14,separators, encoding speedup, more test coverage for indent
+c2e4ffceae34dd1eb2804f17985b63712fe5c49f,Bob Ippolito,2006-11-30,produce inf at runtime
+905f2758e1710b677ba6721b9c0b9782e7a03617,Bob Ippolito,2006-11-30,1.0 vs. infinity patch for Win32
+f283cced262956d6b02ee664f05e0f37c605922c,Bob Ippolito,2006-11-08,bump version
+2a24901f5fb5abaca82783efbd04ac90903a3e76,Bob Ippolito,2006-10-18,fix warning for Python 2.5
+fee28fbad54a8ef52330c9fbe310adfcdfe42c63,Bob Ippolito,2006-08-10,encoder
+4f4ffa4cf8b8cefb4edaac2430e0dae7b00c7d02,Bob Ippolito,2006-07-15,indent feature
+f92ad76613d9bac57047c8096b5dccc1670d9720,Bob Ippolito,2006-07-12,unused
+9eec25bff41ca103b28c1a14ec0220932e4e65b3,Bob Ippolito,2006-07-12,unused
+43656b8109cacd7c70dac84715bcce23eda47898,Bob Ippolito,2006-06-28,add license text
+01b1e7f41a148d25454bc01a58395f8d0e659206,Bob Ippolito,2006-04-27,don't check dupes
+423da8c676857150e5e0b10249b96a9ae2605179,Bob Ippolito,2006-04-27,check for dupe keys
+bb0890c10fd7ba34077de46f05c54a1d8b603142,Bob Ippolito,2006-04-12,prevent </script> attack
+28a86c8fbd1618f44de78205e17a7c91f7c2f4aa,Bob Ippolito,2006-04-12,fix context issue with iterscan
+8a86ca64afb1e85ca20734ea08da806112f1f0a8,Bob Ippolito,2006-04-02,simplejson 1.3
+3035dacc8376310196b71012d80a48904342eff1,Bob Ippolito,2006-03-19,support a decoding object_hook
+40dbd8e38dcf3e6198b39dae388184b6ed1bfd48,Bob Ippolito,2006-03-18,sort_keys from cce
+479873dba71ff4b73bdb398e5ead9b29aa8cc909,Bob Ippolito,2006-02-16,YAML space
+d496eead9045bf2280dfbdb7329c6dabb9fd4495,Bob Ippolito,2006-01-20,typo
+eb051a075f677a96b4442904ba7a385586422c84,Bob Ippolito,2006-01-20,fix filter
+36c885f6ac87cd15928471c10ad77729a9acebf6,Bob Ippolito,2006-01-20,change entry point
+c4010d6d7fd0fcab8391cd1e4d6477192b2055f5,Bob Ippolito,2006-01-20,jsonfilter
+07e70f336381a0b89177feaf6e5c6af5dd8e74c2,Bob Ippolito,2006-01-03,bump to 1.2, dumb benchmarks, performance enhancements to decoder
+84eea045890fa00e10fb118f0484a3318b04c9b8,Bob Ippolito,2006-01-03,unused
+dbed4b28cb78036fe1659973805ff20fec8a6ec0,Bob Ippolito,2005-12-31,docs
+d4105246ab164d2c5debc8d74bbaff4e398f464c,Bob Ippolito,2005-12-31,docs
+27ece5964f2da82383ca24b128ecfca962baa93f,Bob Ippolito,2005-12-31,docs
+9e7d1a3413fa3e518181311baec4a0f67ce9f6c9,Bob Ippolito,2005-12-31,rename
+23cd302f33290ddd76996cd65bfd510012247bb1,Bob Ippolito,2005-12-31,renames
+5aa76448ef5a7a4cb53540c58c5cf42a04e0a4b2,Bob Ippolito,2005-12-31,simplejson
